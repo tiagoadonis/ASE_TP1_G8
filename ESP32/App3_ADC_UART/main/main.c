@@ -25,8 +25,8 @@
 #define DEFAULT_VREF    1100        // Use adc2_vref_to_gpio() to obtain a better estimate
 #define NO_OF_SAMPLES   25          // Multisampling
 
-void config_UART(){
-    const uart_port_t uart_num = UART_NUM_0;
+// To configure the UART
+void config_UART(uart_port_t uart_num){
 
     uart_config_t uart_config = {
         .baud_rate = 115200,
@@ -49,21 +49,10 @@ void config_UART(){
     // Install UART driver using an event queue here
     // uart_driver_install(uart_num, rx_buffer_size, tx_buffer_size, queue_size, uart_queue, intr_alloc_flags)
     ESP_ERROR_CHECK(uart_driver_install(uart_num, uart_buffer_size, uart_buffer_size, 10, &uart_queue, 0));
-
-    // Write data to UART.
-    char* test_str = "This is a test string.\n";
-    uart_write_bytes(uart_num, (const char*)test_str, strlen(test_str));
 }
 
-
 // To configure the ADC
-void config_ADC(){
-    // ADC1: 
-    // 8 channels: GPIO32 - GPIO39
-
-    //ADC1 channel 0 is GPIO36
-    adc_channel_t channel = ADC1_CHANNEL_0; 
-
+void config_ADC(adc_channel_t channel, esp_adc_cal_characteristics_t *adc_chars){
     // ADC capture width is 12Bit.
     adc_bits_width_t width = ADC_WIDTH_BIT_12;
 
@@ -94,10 +83,21 @@ void config_ADC(){
     // +----------+-------------+-----------------+
     adc1_config_channel_atten(channel, atten);
 
-     //Characterize ADC at particular atten
-    esp_adc_cal_characteristics_t *adc_chars = calloc(1, sizeof(esp_adc_cal_characteristics_t));
-    esp_adc_cal_value_t val_type = esp_adc_cal_characterize(unit, atten, width, DEFAULT_VREF, adc_chars);
+    //Characterize ADC at particular atten
+    esp_adc_cal_characterize(unit, atten, width, DEFAULT_VREF, adc_chars);
+}
 
+void app_main(void){
+    // ADC1 channel 0 is GPIO36
+    gpio_set_direction(GPIO_NUM_36, GPIO_MODE_INPUT);
+
+    config_UART(UART_NUM_0);
+    
+    adc_channel_t channel = ADC1_CHANNEL_0;
+    esp_adc_cal_characteristics_t *adc_chars = calloc(1, sizeof(esp_adc_cal_characteristics_t));
+
+    config_ADC(channel, adc_chars);    
+    
     // To read ADC conversion result
     while(1){
         uint32_t raw = 0;
@@ -114,14 +114,11 @@ void config_ADC(){
         float toVolts = (float) voltage / (float) 1000;
 
         // Print the info
-        printf("Raw: %d\tVoltage: %.2fV\n", raw, toVolts);
+        char str[80];
+        sprintf(str, "Voltage: %.2fV\n", toVolts);
+        uart_write_bytes(UART_NUM_0, (const char*)str, strlen(str));
 
         // Block for 100ms -> for not trigger the watchdog timer
         vTaskDelay(100 / portTICK_PERIOD_MS);
     }
-}
-
-void app_main(void){
-    config_ADC();
-    //config_UART();
 }
