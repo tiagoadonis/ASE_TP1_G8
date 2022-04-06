@@ -13,6 +13,7 @@
 // (UART Code) https://github.com/espressif/esp-idf/blob/4350e6fef859b94f3efae6ceced751911c9d2cbc/examples/peripherals/uart/uart_echo/main/uart_echo_example_main.c
 
 // GPIOs must be used in all 3 applications.
+// Timers could be used in any of the 3 applications (if appropriate).
 
 // Over-the-Air update capabilities must be implemented and used to swap between 
 // two applications of your choice.
@@ -114,11 +115,13 @@ void config_ADC(){
 
         // Print the info
         printf("Raw: %d\tVoltage: %.2fV\n", raw, toVolts);
+
+        // Block for 100ms -> for not trigger the watchdog timer
+        vTaskDelay(100 / portTICK_PERIOD_MS);
     }
 }
 
 void app_main(void){
-    //config_ADC();
-
-    config_UART();
+    config_ADC();
+    //config_UART();
 }
