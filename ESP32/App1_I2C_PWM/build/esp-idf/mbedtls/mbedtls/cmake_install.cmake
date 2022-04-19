@@ -1,4 +1,4 @@
-# Install script for directory: /home/anafilipe/esp/esp-idf/components/mbedtls/mbedtls
+# Install script for directory: /home/tiagoadonis/esp/esp-idf/components/mbedtls/mbedtls
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,14 +34,13 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/home/anafilipe/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-objdump")
+  set(CMAKE_OBJDUMP "/home/tiagoadonis/.espressif/tools/xtensa-esp32-elf/esp-2021r2-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-objdump")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/anafilipe/esp/App1_I2C_PWM/build/esp-idf/mbedtls/mbedtls/include/cmake_install.cmake")
-  include("/home/anafilipe/esp/App1_I2C_PWM/build/esp-idf/mbedtls/mbedtls/3rdparty/cmake_install.cmake")
-  include("/home/anafilipe/esp/App1_I2C_PWM/build/esp-idf/mbedtls/mbedtls/library/cmake_install.cmake")
+  include("/home/tiagoadonis/esp-idf_workspace/I2C_PWM/build/esp-idf/mbedtls/mbedtls/library/cmake_install.cmake")
+  include("/home/tiagoadonis/esp-idf_workspace/I2C_PWM/build/esp-idf/mbedtls/mbedtls/include/cmake_install.cmake")
 
 endif()
 

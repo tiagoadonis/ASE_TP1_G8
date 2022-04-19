@@ -14,50 +14,35 @@
 // (PWM - LEDC)  https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/peripherals/ledc.html
 // (PWM - LEDC Code) https://github.com/espressif/esp-idf/tree/4350e6fef859b94f3efae6ceced751911c9d2cbc/examples/peripherals/ledc
 
-static const char *TAG = "i2c-pwm";
+static const char *TAG = "I2C_PWM";
 
-#define I2C_MASTER_SCL_IO           GPIO_NUM_22      /*!< GPIO number used for I2C master clock */
-#define I2C_MASTER_SDA_IO           GPIO_NUM_21      /*!< GPIO number used for I2C master data  */
-#define I2C_MASTER_NUM              0                /*!< I2C master i2c port number */
-#define I2C_MASTER_FREQ_HZ          100000           /*!< I2C master clock frequency */
-#define I2C_MASTER_TX_BUF_DISABLE   0                /*!< I2C master doesn't need buffer */
-#define I2C_MASTER_RX_BUF_DISABLE   0
-
-#define TC74_SLAVE_ADDR_A5          0x4D             /*!< default slave address for TC74 sensor */
-#define READ_TEMP_REGISTER          0x00
-#define TC74_SLAVE_ADDR  TC74_SLAVE_ADDR_A5         /*!< slave address for TC74 sensor */
-#define READ_BIT  I2C_MASTER_READ                   /*!< I2C master read */
+#define I2C_MASTER_SCL_IO GPIO_NUM_22               /*!< GPIO number used for I2C master clock */
+#define I2C_MASTER_SDA_IO GPIO_NUM_21               /*!< GPIO number used for I2C master data  */
+#define I2C_MASTER_NUM 0                            /*!< I2C master i2c port number */
+#define I2C_MASTER_FREQ_HZ 100000                   /*!< I2C master clock frequency */
+#define I2C_MASTER_TX_BUF_DISABLE 0                 /*!< I2C master doesn't need buffer */
+#define I2C_MASTER_RX_BUF_DISABLE 0
+#define TC74_SLAVE_ADDR_A5 0x4D                     /*!< default slave address for TC74 sensor */
+#define READ_TEMP_REGISTER 0x00
+#define TC74_SLAVE_ADDR TC74_SLAVE_ADDR_A5          /*!< slave address for TC74 sensor */
+#define READ_BIT I2C_MASTER_READ                    /*!< I2C master read */
 #define WRITE_BIT I2C_MASTER_WRITE                  /*!< I2C master write */
 #define ACK_CHECK_EN 0x1                            /*!< I2C master will check ack from slave*/
 #define NACK_VAL 0x1                                /*!< I2C nack value */
 
-
-#if CONFIG_IDF_TARGET_ESP32
-#define LEDC_HS_TIMER          LEDC_TIMER_0
-#define LEDC_HS_MODE           LEDC_HIGH_SPEED_MODE
-#define LEDC_HS_CH0_GPIO       (5)
-#define LEDC_HS_CH0_CHANNEL    LEDC_CHANNEL_0
-#define LEDC_HS_CH1_GPIO       (4)
-#define LEDC_HS_CH1_CHANNEL    LEDC_CHANNEL_1
-#endif
-#define LEDC_LS_TIMER          LEDC_TIMER_1
-#define LEDC_LS_MODE           LEDC_LOW_SPEED_MODE
-#if !CONFIG_IDF_TARGET_ESP32
-#define LEDC_LS_CH0_GPIO       (5)
-#define LEDC_LS_CH0_CHANNEL    LEDC_CHANNEL_0
-#define LEDC_LS_CH1_GPIO       (4)
-#define LEDC_LS_CH1_CHANNEL    LEDC_CHANNEL_1
-#endif
-
-#define LEDC_TEST_CH_NUM       (2)
-#define LEDC_TEST_DUTY         (4000)
-#define LEDC_TEST_FADE_TIME    (3000)
-
-
+#define LEDC_HS_TIMER LEDC_TIMER_0
+#define LEDC_HS_MODE LEDC_HIGH_SPEED_MODE
+#define LEDC_HS_CH0_GPIO GPIO_NUM_5
+#define LEDC_HS_CH0_CHANNEL LEDC_CHANNEL_0
+#define LEDC_HS_CH1_GPIO GPIO_NUM_4
+#define LEDC_HS_CH1_CHANNEL LEDC_CHANNEL_1
+#define LEDC_LS_TIMER LEDC_TIMER_1
+#define LEDC_LS_MODE LEDC_LOW_SPEED_MODE
+#define LEDC_TEST_CH_NUM (2)
+#define LEDC_TEST_DUTY (4000)
+#define LEDC_TEST_FADE_TIME (3000)
 
 static esp_err_t i2c_master_init(void) {
-    int i2c_master_port = I2C_MASTER_NUM;
-
     i2c_config_t conf = {
         .mode = I2C_MODE_MASTER,
         .sda_io_num = I2C_MASTER_SDA_IO,
@@ -66,10 +51,9 @@ static esp_err_t i2c_master_init(void) {
         .scl_pullup_en = GPIO_PULLUP_ENABLE,
         .master.clk_speed = I2C_MASTER_FREQ_HZ,
     };
+    i2c_param_config(I2C_MASTER_NUM, &conf);
 
-    i2c_param_config(i2c_master_port, &conf);
-
-    return i2c_driver_install(i2c_master_port, conf.mode, I2C_MASTER_RX_BUF_DISABLE, I2C_MASTER_TX_BUF_DISABLE, 0);
+    return i2c_driver_install(I2C_MASTER_NUM, conf.mode, 0, 0, 0);
 }
 
 esp_err_t i2c_master_read_temp(i2c_port_t i2c_num, uint8_t *tmprt) {
@@ -88,7 +72,6 @@ esp_err_t i2c_master_read_temp(i2c_port_t i2c_num, uint8_t *tmprt) {
 }
 
 static void i2c_pwm_task(void *arg){
-
     uint8_t temp_val;
     int ch;
 
@@ -102,53 +85,27 @@ static void i2c_pwm_task(void *arg){
     
     // Set configuration of timer0 for high speed channels
     ledc_timer_config(&ledc_timer);
-#ifdef CONFIG_IDF_TARGET_ESP32
     // Prepare and set configuration of timer1 for low speed channels
     ledc_timer.speed_mode = LEDC_HS_MODE;
     ledc_timer.timer_num = LEDC_HS_TIMER;
     ledc_timer_config(&ledc_timer);
-#endif
 
 ledc_channel_config_t ledc_channel[LEDC_TEST_CH_NUM] = {
-#if CONFIG_IDF_TARGET_ESP32
-        {
-            .channel    = LEDC_HS_CH0_CHANNEL,
-            .duty       = 0,
-            .gpio_num   = LEDC_HS_CH0_GPIO,
-            .speed_mode = LEDC_HS_MODE,
-            .hpoint     = 0,
-            .timer_sel  = LEDC_HS_TIMER,
-            .flags.output_invert = 0
-        },
-        {
-            .channel    = LEDC_HS_CH1_CHANNEL,
-            .duty       = 0,
-            .gpio_num   = LEDC_HS_CH1_GPIO,
-            .speed_mode = LEDC_HS_MODE,
-            .hpoint     = 0,
-            .timer_sel  = LEDC_HS_TIMER,
-            .flags.output_invert = 0
-        },
-#else
-        {
-            .channel    = LEDC_LS_CH0_CHANNEL,
-            .duty       = 0,
-            .gpio_num   = LEDC_LS_CH0_GPIO,
-            .speed_mode = LEDC_LS_MODE,
-            .hpoint     = 0,
-            .timer_sel  = LEDC_LS_TIMER,
-            .flags.output_invert = 0
-        },
-        {
-            .channel    = LEDC_LS_CH1_CHANNEL,
-            .duty       = 0,
-            .gpio_num   = LEDC_LS_CH1_GPIO,
-            .speed_mode = LEDC_LS_MODE,
-            .hpoint     = 0,
-            .timer_sel  = LEDC_LS_TIMER,
-            .flags.output_invert = 0
-        },
-#endif
+        { .channel    = LEDC_HS_CH0_CHANNEL,
+          .duty       = 0,
+          .gpio_num   = LEDC_HS_CH0_GPIO,
+          .speed_mode = LEDC_HS_MODE,
+          .hpoint     = 0,
+          .timer_sel  = LEDC_HS_TIMER,
+          .flags.output_invert = 0 },
+        
+        { .channel    = LEDC_HS_CH1_CHANNEL,
+          .duty       = 0,
+          .gpio_num   = LEDC_HS_CH1_GPIO,
+          .speed_mode = LEDC_HS_MODE,
+          .hpoint     = 0,
+          .timer_sel  = LEDC_HS_TIMER,
+          .flags.output_invert = 0 },
     };
 
     // Set LED Controller with previously prepared configuration
@@ -158,7 +115,6 @@ ledc_channel_config_t ledc_channel[LEDC_TEST_CH_NUM] = {
 
     // Initialize fade service.
     ledc_fade_func_install(0);
-
     ESP_ERROR_CHECK(i2c_master_init());
     ESP_LOGI(TAG, "I2C initialized successfully");
 
@@ -185,11 +141,11 @@ ledc_channel_config_t ledc_channel[LEDC_TEST_CH_NUM] = {
         ledc_fade_start(ledc_channel[ch].speed_mode,
                 ledc_channel[ch].channel, LEDC_FADE_NO_WAIT);
 
-        vTaskDelay(2500 / portTICK_PERIOD_MS);
+        vTaskDelay(2000 / portTICK_PERIOD_MS);
     }
     
     ESP_ERROR_CHECK(i2c_driver_delete(I2C_MASTER_NUM));
-    ESP_LOGI(TAG, "I2C de-initialized successfully");
+    ESP_LOGI(TAG, "I2C initialized successfully");
     
     ledc_fade_func_uninstall();
 }

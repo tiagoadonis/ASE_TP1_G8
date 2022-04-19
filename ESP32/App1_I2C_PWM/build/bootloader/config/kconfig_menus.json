@@ -3,1526 +3,6 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_BROWNOUT_RESET_SUPPORTED",
-        "name": "SOC_BROWNOUT_RESET_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "string"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_TWAI_BRP_DIV_SUPPORTED",
-        "name": "SOC_TWAI_BRP_DIV_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "string"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_CAPS_ECO_VER_MAX",
-        "name": "SOC_CAPS_ECO_VER_MAX",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_ADC_SUPPORTED",
-        "name": "SOC_ADC_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_DAC_SUPPORTED",
-        "name": "SOC_DAC_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_MCPWM_SUPPORTED",
-        "name": "SOC_MCPWM_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SDMMC_HOST_SUPPORTED",
-        "name": "SOC_SDMMC_HOST_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_BT_SUPPORTED",
-        "name": "SOC_BT_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_BLUEDROID_SUPPORTED",
-        "name": "SOC_BLUEDROID_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_CLASSIC_BT_SUPPORTED",
-        "name": "SOC_CLASSIC_BT_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_PCNT_SUPPORTED",
-        "name": "SOC_PCNT_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_WIFI_SUPPORTED",
-        "name": "SOC_WIFI_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SDIO_SLAVE_SUPPORTED",
-        "name": "SOC_SDIO_SLAVE_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_TWAI_SUPPORTED",
-        "name": "SOC_TWAI_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_EMAC_SUPPORTED",
-        "name": "SOC_EMAC_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_CPU_CORES_NUM",
-        "name": "SOC_CPU_CORES_NUM",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_ULP_SUPPORTED",
-        "name": "SOC_ULP_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_CCOMP_TIMER_SUPPORTED",
-        "name": "SOC_CCOMP_TIMER_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_RTC_FAST_MEM_SUPPORTED",
-        "name": "SOC_RTC_FAST_MEM_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_RTC_SLOW_MEM_SUPPORTED",
-        "name": "SOC_RTC_SLOW_MEM_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_I2S_SUPPORTED",
-        "name": "SOC_I2S_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_RMT_SUPPORTED",
-        "name": "SOC_RMT_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SIGMADELTA_SUPPORTED",
-        "name": "SOC_SIGMADELTA_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SUPPORT_COEXISTENCE",
-        "name": "SOC_SUPPORT_COEXISTENCE",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_AES_SUPPORTED",
-        "name": "SOC_AES_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_MPI_SUPPORTED",
-        "name": "SOC_MPI_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SHA_SUPPORTED",
-        "name": "SOC_SHA_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_FLASH_ENC_SUPPORTED",
-        "name": "SOC_FLASH_ENC_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SECURE_BOOT_SUPPORTED",
-        "name": "SOC_SECURE_BOOT_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_ADC_RTC_CTRL_SUPPORTED",
-        "name": "SOC_ADC_RTC_CTRL_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_ADC_DIG_CTRL_SUPPORTED",
-        "name": "SOC_ADC_DIG_CTRL_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_ADC_PERIPH_NUM",
-        "name": "SOC_ADC_PERIPH_NUM",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_ADC_MAX_CHANNEL_NUM",
-        "name": "SOC_ADC_MAX_CHANNEL_NUM",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_ADC_DIGI_CONTROLLER_NUM",
-        "name": "SOC_ADC_DIGI_CONTROLLER_NUM",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_ADC_PATT_LEN_MAX",
-        "name": "SOC_ADC_PATT_LEN_MAX",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_ADC_DIGI_MIN_BITWIDTH",
-        "name": "SOC_ADC_DIGI_MIN_BITWIDTH",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_ADC_DIGI_MAX_BITWIDTH",
-        "name": "SOC_ADC_DIGI_MAX_BITWIDTH",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_ADC_SAMPLE_FREQ_THRES_HIGH",
-        "name": "SOC_ADC_SAMPLE_FREQ_THRES_HIGH",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_ADC_SAMPLE_FREQ_THRES_LOW",
-        "name": "SOC_ADC_SAMPLE_FREQ_THRES_LOW",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_ADC_MAX_BITWIDTH",
-        "name": "SOC_ADC_MAX_BITWIDTH",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SHARED_IDCACHE_SUPPORTED",
-        "name": "SOC_SHARED_IDCACHE_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_CPU_BREAKPOINTS_NUM",
-        "name": "SOC_CPU_BREAKPOINTS_NUM",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_CPU_WATCHPOINTS_NUM",
-        "name": "SOC_CPU_WATCHPOINTS_NUM",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_CPU_WATCHPOINT_SIZE",
-        "name": "SOC_CPU_WATCHPOINT_SIZE",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_CPU_HAS_FPU",
-        "name": "SOC_CPU_HAS_FPU",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_DAC_PERIPH_NUM",
-        "name": "SOC_DAC_PERIPH_NUM",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_DAC_RESOLUTION",
-        "name": "SOC_DAC_RESOLUTION",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_GPIO_PORT",
-        "name": "SOC_GPIO_PORT",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_GPIO_PIN_COUNT",
-        "name": "SOC_GPIO_PIN_COUNT",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_GPIO_VALID_GPIO_MASK",
-        "name": "SOC_GPIO_VALID_GPIO_MASK",
-        "range": null,
-        "title": null,
-        "type": "hex"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_GPIO_SUPPORT_SLP_SWITCH",
-        "name": "SOC_GPIO_SUPPORT_SLP_SWITCH",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_I2C_NUM",
-        "name": "SOC_I2C_NUM",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_I2C_FIFO_LEN",
-        "name": "SOC_I2C_FIFO_LEN",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_I2C_SUPPORT_SLAVE",
-        "name": "SOC_I2C_SUPPORT_SLAVE",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_I2C_SUPPORT_APB",
-        "name": "SOC_I2C_SUPPORT_APB",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_CLK_APLL_SUPPORTED",
-        "name": "SOC_CLK_APLL_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_APLL_MULTIPLIER_OUT_MIN_HZ",
-        "name": "SOC_APLL_MULTIPLIER_OUT_MIN_HZ",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_APLL_MULTIPLIER_OUT_MAX_HZ",
-        "name": "SOC_APLL_MULTIPLIER_OUT_MAX_HZ",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_APLL_MIN_HZ",
-        "name": "SOC_APLL_MIN_HZ",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_APLL_MAX_HZ",
-        "name": "SOC_APLL_MAX_HZ",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_I2S_NUM",
-        "name": "SOC_I2S_NUM",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_I2S_HW_VERSION_1",
-        "name": "SOC_I2S_HW_VERSION_1",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_I2S_SUPPORTS_APLL",
-        "name": "SOC_I2S_SUPPORTS_APLL",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_I2S_SUPPORTS_PDM",
-        "name": "SOC_I2S_SUPPORTS_PDM",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_I2S_SUPPORTS_PDM_TX",
-        "name": "SOC_I2S_SUPPORTS_PDM_TX",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_I2S_SUPPORTS_PDM_RX",
-        "name": "SOC_I2S_SUPPORTS_PDM_RX",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_I2S_SUPPORTS_ADC_DAC",
-        "name": "SOC_I2S_SUPPORTS_ADC_DAC",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_I2S_SUPPORTS_ADC",
-        "name": "SOC_I2S_SUPPORTS_ADC",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_I2S_SUPPORTS_DAC",
-        "name": "SOC_I2S_SUPPORTS_DAC",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_I2S_SUPPORTS_LCD_CAMERA",
-        "name": "SOC_I2S_SUPPORTS_LCD_CAMERA",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_I2S_TRANS_SIZE_ALIGN_WORD",
-        "name": "SOC_I2S_TRANS_SIZE_ALIGN_WORD",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_I2S_LCD_I80_VARIANT",
-        "name": "SOC_I2S_LCD_I80_VARIANT",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_LCD_I80_SUPPORTED",
-        "name": "SOC_LCD_I80_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_LCD_I80_BUSES",
-        "name": "SOC_LCD_I80_BUSES",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_LCD_I80_BUS_WIDTH",
-        "name": "SOC_LCD_I80_BUS_WIDTH",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_LEDC_HAS_TIMER_SPECIFIC_MUX",
-        "name": "SOC_LEDC_HAS_TIMER_SPECIFIC_MUX",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_LEDC_SUPPORT_REF_TICK",
-        "name": "SOC_LEDC_SUPPORT_REF_TICK",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_LEDC_SUPPORT_HS_MODE",
-        "name": "SOC_LEDC_SUPPORT_HS_MODE",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_LEDC_CHANNEL_NUM",
-        "name": "SOC_LEDC_CHANNEL_NUM",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_LEDC_TIMER_BIT_WIDE_NUM",
-        "name": "SOC_LEDC_TIMER_BIT_WIDE_NUM",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_MCPWM_GROUPS",
-        "name": "SOC_MCPWM_GROUPS",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_MCPWM_TIMERS_PER_GROUP",
-        "name": "SOC_MCPWM_TIMERS_PER_GROUP",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_MCPWM_OPERATORS_PER_GROUP",
-        "name": "SOC_MCPWM_OPERATORS_PER_GROUP",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_MCPWM_COMPARATORS_PER_OPERATOR",
-        "name": "SOC_MCPWM_COMPARATORS_PER_OPERATOR",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_MCPWM_GENERATORS_PER_OPERATOR",
-        "name": "SOC_MCPWM_GENERATORS_PER_OPERATOR",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_MCPWM_TRIGGERS_PER_OPERATOR",
-        "name": "SOC_MCPWM_TRIGGERS_PER_OPERATOR",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_MCPWM_GPIO_FAULTS_PER_GROUP",
-        "name": "SOC_MCPWM_GPIO_FAULTS_PER_GROUP",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_MCPWM_CAPTURE_TIMERS_PER_GROUP",
-        "name": "SOC_MCPWM_CAPTURE_TIMERS_PER_GROUP",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_MCPWM_CAPTURE_CHANNELS_PER_TIMER",
-        "name": "SOC_MCPWM_CAPTURE_CHANNELS_PER_TIMER",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_MCPWM_GPIO_SYNCHROS_PER_GROUP",
-        "name": "SOC_MCPWM_GPIO_SYNCHROS_PER_GROUP",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_MCPWM_BASE_CLK_HZ",
-        "name": "SOC_MCPWM_BASE_CLK_HZ",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_MPU_CONFIGURABLE_REGIONS_SUPPORTED",
-        "name": "SOC_MPU_CONFIGURABLE_REGIONS_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_MPU_MIN_REGION_SIZE",
-        "name": "SOC_MPU_MIN_REGION_SIZE",
-        "range": null,
-        "title": null,
-        "type": "hex"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_MPU_REGIONS_MAX_NUM",
-        "name": "SOC_MPU_REGIONS_MAX_NUM",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_MPU_REGION_RO_SUPPORTED",
-        "name": "SOC_MPU_REGION_RO_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_MPU_REGION_WO_SUPPORTED",
-        "name": "SOC_MPU_REGION_WO_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_PCNT_GROUPS",
-        "name": "SOC_PCNT_GROUPS",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_PCNT_UNITS_PER_GROUP",
-        "name": "SOC_PCNT_UNITS_PER_GROUP",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_PCNT_CHANNELS_PER_UNIT",
-        "name": "SOC_PCNT_CHANNELS_PER_UNIT",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_PCNT_THRES_POINT_PER_UNIT",
-        "name": "SOC_PCNT_THRES_POINT_PER_UNIT",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_RMT_GROUPS",
-        "name": "SOC_RMT_GROUPS",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_RMT_TX_CANDIDATES_PER_GROUP",
-        "name": "SOC_RMT_TX_CANDIDATES_PER_GROUP",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_RMT_RX_CANDIDATES_PER_GROUP",
-        "name": "SOC_RMT_RX_CANDIDATES_PER_GROUP",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_RMT_CHANNELS_PER_GROUP",
-        "name": "SOC_RMT_CHANNELS_PER_GROUP",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_RMT_MEM_WORDS_PER_CHANNEL",
-        "name": "SOC_RMT_MEM_WORDS_PER_CHANNEL",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_RMT_SUPPORT_REF_TICK",
-        "name": "SOC_RMT_SUPPORT_REF_TICK",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_RMT_CHANNEL_CLK_INDEPENDENT",
-        "name": "SOC_RMT_CHANNEL_CLK_INDEPENDENT",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_RTCIO_PIN_COUNT",
-        "name": "SOC_RTCIO_PIN_COUNT",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_RTCIO_INPUT_OUTPUT_SUPPORTED",
-        "name": "SOC_RTCIO_INPUT_OUTPUT_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_RTCIO_HOLD_SUPPORTED",
-        "name": "SOC_RTCIO_HOLD_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_RTCIO_WAKE_SUPPORTED",
-        "name": "SOC_RTCIO_WAKE_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SIGMADELTA_NUM",
-        "name": "SOC_SIGMADELTA_NUM",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SIGMADELTA_CHANNEL_NUM",
-        "name": "SOC_SIGMADELTA_CHANNEL_NUM",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SPI_HD_BOTH_INOUT_SUPPORTED",
-        "name": "SOC_SPI_HD_BOTH_INOUT_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SPI_AS_CS_SUPPORTED",
-        "name": "SOC_SPI_AS_CS_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SPI_PERIPH_NUM",
-        "name": "SOC_SPI_PERIPH_NUM",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SPI_DMA_CHAN_NUM",
-        "name": "SOC_SPI_DMA_CHAN_NUM",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SPI_MAXIMUM_BUFFER_SIZE",
-        "name": "SOC_SPI_MAXIMUM_BUFFER_SIZE",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SPI_MAX_PRE_DIVIDER",
-        "name": "SOC_SPI_MAX_PRE_DIVIDER",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_TIMER_GROUPS",
-        "name": "SOC_TIMER_GROUPS",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_TIMER_GROUP_TIMERS_PER_GROUP",
-        "name": "SOC_TIMER_GROUP_TIMERS_PER_GROUP",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_TIMER_GROUP_COUNTER_BIT_WIDTH",
-        "name": "SOC_TIMER_GROUP_COUNTER_BIT_WIDTH",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_TIMER_GROUP_TOTAL_TIMERS",
-        "name": "SOC_TIMER_GROUP_TOTAL_TIMERS",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_TOUCH_VERSION_1",
-        "name": "SOC_TOUCH_VERSION_1",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_TOUCH_SENSOR_NUM",
-        "name": "SOC_TOUCH_SENSOR_NUM",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_TOUCH_PAD_MEASURE_WAIT_MAX",
-        "name": "SOC_TOUCH_PAD_MEASURE_WAIT_MAX",
-        "range": null,
-        "title": null,
-        "type": "hex"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_TOUCH_PAD_THRESHOLD_MAX",
-        "name": "SOC_TOUCH_PAD_THRESHOLD_MAX",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_TWAI_BRP_MIN",
-        "name": "SOC_TWAI_BRP_MIN",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_TWAI_SUPPORT_MULTI_ADDRESS_LAYOUT",
-        "name": "SOC_TWAI_SUPPORT_MULTI_ADDRESS_LAYOUT",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_UART_NUM",
-        "name": "SOC_UART_NUM",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_UART_SUPPORT_REF_TICK",
-        "name": "SOC_UART_SUPPORT_REF_TICK",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_UART_FIFO_LEN",
-        "name": "SOC_UART_FIFO_LEN",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_UART_BITRATE_MAX",
-        "name": "SOC_UART_BITRATE_MAX",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SPIRAM_SUPPORTED",
-        "name": "SOC_SPIRAM_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SHA_SUPPORT_PARALLEL_ENG",
-        "name": "SOC_SHA_SUPPORT_PARALLEL_ENG",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SHA_SUPPORT_SHA1",
-        "name": "SOC_SHA_SUPPORT_SHA1",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SHA_SUPPORT_SHA256",
-        "name": "SOC_SHA_SUPPORT_SHA256",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SHA_SUPPORT_SHA384",
-        "name": "SOC_SHA_SUPPORT_SHA384",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SHA_SUPPORT_SHA512",
-        "name": "SOC_SHA_SUPPORT_SHA512",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_RSA_MAX_BIT_LEN",
-        "name": "SOC_RSA_MAX_BIT_LEN",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_AES_SUPPORT_AES_128",
-        "name": "SOC_AES_SUPPORT_AES_128",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_AES_SUPPORT_AES_192",
-        "name": "SOC_AES_SUPPORT_AES_192",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_AES_SUPPORT_AES_256",
-        "name": "SOC_AES_SUPPORT_AES_256",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SECURE_BOOT_V1",
-        "name": "SOC_SECURE_BOOT_V1",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_EFUSE_SECURE_BOOT_KEY_DIGESTS",
-        "name": "SOC_EFUSE_SECURE_BOOT_KEY_DIGESTS",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_FLASH_ENCRYPTED_XTS_AES_BLOCK_MAX",
-        "name": "SOC_FLASH_ENCRYPTED_XTS_AES_BLOCK_MAX",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_PHY_DIG_REGS_MEM_SIZE",
-        "name": "SOC_PHY_DIG_REGS_MEM_SIZE",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_PM_SUPPORT_EXT_WAKEUP",
-        "name": "SOC_PM_SUPPORT_EXT_WAKEUP",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_PM_SUPPORT_TOUCH_SENSOR_WAKEUP",
-        "name": "SOC_PM_SUPPORT_TOUCH_SENSOR_WAKEUP",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SDMMC_USE_IOMUX",
-        "name": "SOC_SDMMC_USE_IOMUX",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SDMMC_NUM_SLOTS",
-        "name": "SOC_SDMMC_NUM_SLOTS",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_BLE_DONT_UPDATE_OWN_RPA",
-        "name": "SOC_BLE_DONT_UPDATE_OWN_RPA",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
         "id": "IDF_CMAKE",
         "name": "IDF_CMAKE",
         "range": null,
@@ -1563,31 +43,11 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "IDF_TARGET_ARCH",
-        "name": "IDF_TARGET_ARCH",
-        "range": null,
-        "title": null,
-        "type": "string"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
         "id": "IDF_TARGET",
         "name": "IDF_TARGET",
         "range": null,
         "title": null,
         "type": "string"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "IDF_TARGET_LINUX",
-        "name": "IDF_TARGET_LINUX",
-        "range": null,
-        "title": null,
-        "type": "bool"
     },
     {
         "children": [],
@@ -1640,46 +100,6 @@
         "type": "bool"
     },
     {
-        "children": [
-            {
-                "children": [],
-                "depends_on": "<choice IDF_TARGET_ESP32H2_BETA_VERSION>",
-                "help": null,
-                "id": "IDF_TARGET_ESP32H2_BETA_VERSION_1",
-                "name": "IDF_TARGET_ESP32H2_BETA_VERSION_1",
-                "range": null,
-                "title": "ESP32-H2 beta1",
-                "type": "bool"
-            },
-            {
-                "children": [],
-                "depends_on": "<choice IDF_TARGET_ESP32H2_BETA_VERSION>",
-                "help": null,
-                "id": "IDF_TARGET_ESP32H2_BETA_VERSION_2",
-                "name": "IDF_TARGET_ESP32H2_BETA_VERSION_2",
-                "range": null,
-                "title": "ESP32-H2 beta2",
-                "type": "bool"
-            }
-        ],
-        "depends_on": "IDF_TARGET_ESP32H2",
-        "help": "Currently ESP32-H2 has several beta versions for internal use only.\nSelect the one that matches your chip model.",
-        "id": "esp32-h2-beta-version",
-        "name": "IDF_TARGET_ESP32H2_BETA_VERSION",
-        "title": "ESP32-H2 beta version",
-        "type": "choice"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "IDF_TARGET_ESP32C2",
-        "name": "IDF_TARGET_ESP32C2",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
         "children": [],
         "depends_on": null,
         "help": null,
@@ -1702,10 +122,58 @@
     {
         "children": [
             {
+                "children": [],
+                "depends_on": null,
+                "help": "The prefix/path that is used to call the toolchain. The default setting assumes\na crosstool-ng gcc setup that is in your PATH.",
+                "id": "SDK_TOOLPREFIX",
+                "name": "SDK_TOOLPREFIX",
+                "range": null,
+                "title": "Compiler toolchain path/prefix",
+                "type": "string"
+            },
+            {
+                "children": [],
+                "depends_on": "!IDF_CMAKE",
+                "help": "The executable name/path that is used to run python.\n\n(Note: This option is used with the legacy GNU Make build system only.)",
+                "id": "SDK_PYTHON",
+                "name": "SDK_PYTHON",
+                "range": null,
+                "title": "Python interpreter",
+                "type": "string"
+            },
+            {
+                "children": [],
+                "depends_on": "!IDF_CMAKE",
+                "help": "Adds --warn-undefined-variables to MAKEFLAGS. This causes make to\nprint a warning any time an undefined variable is referenced.\n\nThis option helps find places where a variable reference is misspelled\nor otherwise missing, but it can be unwanted if you have Makefiles which\ndepend on undefined variables expanding to an empty string.\n\n(Note: this option is used with the legacy GNU Make build system only.)",
+                "id": "SDK_MAKE_WARN_UNDEFINED_VARIABLES",
+                "name": "SDK_MAKE_WARN_UNDEFINED_VARIABLES",
+                "range": null,
+                "title": "'make' warns on undefined variables",
+                "type": "bool"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": "Enable this option in case you have a custom toolchain which supports time_t wide 64-bits.\nThis option checks time_t is 64-bits and disables ROM time functions\nto use the time functions from the toolchain instead.\nThis option allows resolving the Y2K38 problem.\nSee \"Setup Linux Toolchain from Scratch\" to build\na custom toolchain which supports 64-bits time_t.\n\nNote: ESP-IDF does not currently come with any pre-compiled toolchain\nthat supports 64-bit wide time_t.\nThis will change in a future major release,\nbut currently 64-bit time_t requires a custom built toolchain.",
+                "id": "SDK_TOOLCHAIN_SUPPORTS_TIME_WIDE_64_BITS",
+                "name": "SDK_TOOLCHAIN_SUPPORTS_TIME_WIDE_64_BITS",
+                "range": null,
+                "title": "Toolchain supports time_t wide 64-bits",
+                "type": "bool"
+            }
+        ],
+        "depends_on": null,
+        "id": "sdk-tool-configuration",
+        "title": "SDK tool configuration",
+        "type": "menu"
+    },
+    {
+        "children": [
+            {
                 "children": [
                     {
                         "children": [],
-                        "depends_on": "!IDF_TARGET_LINUX && <choice APP_BUILD_TYPE>",
+                        "depends_on": "<choice APP_BUILD_TYPE>",
                         "help": null,
                         "id": "APP_BUILD_TYPE_APP_2NDBOOT",
                         "name": "APP_BUILD_TYPE_APP_2NDBOOT",
@@ -1759,26 +227,6 @@
                 "name": "APP_BUILD_USE_FLASH_SECTIONS",
                 "range": null,
                 "title": null,
-                "type": "bool"
-            },
-            {
-                "children": [],
-                "depends_on": null,
-                "help": "If enabled, all date, time, and path information would be eliminated. A .gdbinit file would be create\nautomatically. (or will be append if you have one already)",
-                "id": "APP_REPRODUCIBLE_BUILD",
-                "name": "APP_REPRODUCIBLE_BUILD",
-                "range": null,
-                "title": "Enable reproducible build",
-                "type": "bool"
-            },
-            {
-                "children": [],
-                "depends_on": null,
-                "help": "If enabled, this disables the linking of binary libraries in the application build. Note\nthat after enabling this Wi-Fi/Bluetooth will not work.",
-                "id": "APP_NO_BLOBS",
-                "name": "APP_NO_BLOBS",
-                "range": null,
-                "title": "No Binary Blobs",
                 "type": "bool"
             }
         ],
@@ -2061,36 +509,6 @@
                         "range": null,
                         "title": "Number of the GPIO input to boot TEST partition",
                         "type": "int"
-                    },
-                    {
-                        "children": [
-                            {
-                                "children": [],
-                                "depends_on": "<choice BOOTLOADER_APP_TEST_PIN_LEVEL>",
-                                "help": null,
-                                "id": "BOOTLOADER_APP_TEST_PIN_LOW",
-                                "name": "BOOTLOADER_APP_TEST_PIN_LOW",
-                                "range": null,
-                                "title": "Enter test app on GPIO low",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "<choice BOOTLOADER_APP_TEST_PIN_LEVEL>",
-                                "help": null,
-                                "id": "BOOTLOADER_APP_TEST_PIN_HIGH",
-                                "name": "BOOTLOADER_APP_TEST_PIN_HIGH",
-                                "range": null,
-                                "title": "Enter test app on GPIO high",
-                                "type": "bool"
-                            }
-                        ],
-                        "depends_on": "BOOTLOADER_APP_TEST",
-                        "help": "Pin level for app test, can be triggered on low or high.",
-                        "id": "bootloader-config-gpio-triggers-boot-from-test-app-partition-app-test-gpio-level",
-                        "name": "BOOTLOADER_APP_TEST_PIN_LEVEL",
-                        "title": "App test GPIO level",
-                        "type": "choice"
                     }
                 ],
                 "depends_on": "!BOOTLOADER_APP_ANTI_ROLLBACK",
@@ -2308,30 +726,20 @@
             },
             {
                 "children": [],
-                "depends_on": "ESP32_REV_MIN >= 3 || SOC_SECURE_BOOT_V2_RSA",
+                "depends_on": "ESP32_REV_MIN_3 || IDF_TARGET_ESP32S2 || IDF_TARGET_ESP32C3 || IDF_TARGET_ESP32S3",
                 "help": null,
-                "id": "SECURE_BOOT_V2_RSA_SUPPORTED",
-                "name": "SECURE_BOOT_V2_RSA_SUPPORTED",
+                "id": "SECURE_BOOT_SUPPORTS_RSA",
+                "name": "SECURE_BOOT_SUPPORTS_RSA",
                 "range": null,
                 "title": null,
                 "type": "bool"
             },
             {
                 "children": [],
-                "depends_on": "SOC_SECURE_BOOT_V1",
+                "depends_on": "IDF_TARGET_ESP32S2 || IDF_TARGET_ESP32C3 || IDF_TARGET_ESP32S3",
                 "help": null,
-                "id": "SECURE_BOOT_V1_SUPPORTED",
-                "name": "SECURE_BOOT_V1_SUPPORTED",
-                "range": null,
-                "title": null,
-                "type": "bool"
-            },
-            {
-                "children": [],
-                "depends_on": "ESP32_REV_MIN >= 3",
-                "help": null,
-                "id": "SECURE_BOOT_V2_PREFERRED",
-                "name": "SECURE_BOOT_V2_PREFERRED",
+                "id": "SECURE_TARGET_HAS_SECURE_ROM_DL_MODE",
+                "name": "SECURE_TARGET_HAS_SECURE_ROM_DL_MODE",
                 "range": null,
                 "title": null,
                 "type": "bool"
@@ -2350,7 +758,7 @@
                 "children": [
                     {
                         "children": [],
-                        "depends_on": "SECURE_BOOT_V1_SUPPORTED && (SECURE_SIGNED_APPS_NO_SECURE_BOOT || SECURE_BOOT_V1_ENABLED) && <choice SECURE_SIGNED_APPS_SCHEME>",
+                        "depends_on": "IDF_TARGET_ESP32 && (SECURE_SIGNED_APPS_NO_SECURE_BOOT || SECURE_BOOT_V1_ENABLED) && <choice SECURE_SIGNED_APPS_SCHEME>",
                         "help": "Embeds the ECDSA public key in the bootloader and signs the application with an ECDSA key.\n\nRefer to the documentation before enabling.",
                         "id": "SECURE_SIGNED_APPS_ECDSA_SCHEME",
                         "name": "SECURE_SIGNED_APPS_ECDSA_SCHEME",
@@ -2360,7 +768,7 @@
                     },
                     {
                         "children": [],
-                        "depends_on": "SECURE_BOOT_V2_RSA_SUPPORTED && (SECURE_SIGNED_APPS_NO_SECURE_BOOT || SECURE_BOOT_V2_ENABLED) && <choice SECURE_SIGNED_APPS_SCHEME>",
+                        "depends_on": "SECURE_BOOT_SUPPORTS_RSA && (SECURE_SIGNED_APPS_NO_SECURE_BOOT || SECURE_BOOT_V2_ENABLED) && <choice SECURE_SIGNED_APPS_SCHEME>",
                         "help": "Appends the RSA-3072 based Signature block to the application.\nRefer to <Secure Boot Version 2 documentation link> before enabling.",
                         "id": "SECURE_SIGNED_APPS_RSA_SCHEME",
                         "name": "SECURE_SIGNED_APPS_RSA_SCHEME",
@@ -2402,7 +810,7 @@
                         "children": [
                             {
                                 "children": [],
-                                "depends_on": "SECURE_BOOT_V1_SUPPORTED && <choice SECURE_BOOT_VERSION>",
+                                "depends_on": "IDF_TARGET_ESP32 && <choice SECURE_BOOT_VERSION>",
                                 "help": "Build a bootloader which enables secure boot version 1 on first boot.\nRefer to the Secure Boot section of the ESP-IDF Programmer's Guide for this version before enabling.",
                                 "id": "SECURE_BOOT_V1_ENABLED",
                                 "name": "SECURE_BOOT_V1_ENABLED",
@@ -2412,7 +820,7 @@
                             },
                             {
                                 "children": [],
-                                "depends_on": "SECURE_BOOT_V2_RSA_SUPPORTED && <choice SECURE_BOOT_VERSION>",
+                                "depends_on": "SECURE_BOOT_SUPPORTS_RSA && <choice SECURE_BOOT_VERSION>",
                                 "help": "Build a bootloader which enables Secure Boot version 2 on first boot.\nRefer to Secure Boot V2 section of the ESP-IDF Programmer's Guide for this version before enabling.",
                                 "id": "SECURE_BOOT_V2_ENABLED",
                                 "name": "SECURE_BOOT_V2_ENABLED",
@@ -2429,7 +837,7 @@
                         "type": "choice"
                     }
                 ],
-                "depends_on": "SOC_SECURE_BOOT_SUPPORTED && !(IDF_TARGET_ESP32C3 && ESP32C3_REV_MIN < 3)",
+                "depends_on": "IDF_TARGET_ESP32 || IDF_TARGET_ESP32S2 || ESP32C3_REV_MIN_3 || IDF_TARGET_ESP32S3",
                 "help": "Build a bootloader which enables Secure Boot on first boot.\n\nOnce enabled, Secure Boot will not boot a modified bootloader. The bootloader will only load a partition\ntable or boot an app if the data has a verified digital signature. There are implications for reflashing\nupdated apps once secure boot is enabled.\n\nWhen enabling secure boot, JTAG and ROM BASIC Interpreter are permanently disabled by default.",
                 "id": "SECURE_BOOT",
                 "name": "SECURE_BOOT",
@@ -2500,7 +908,7 @@
             },
             {
                 "children": [],
-                "depends_on": "SECURE_BOOT && SOC_SUPPORT_SECURE_BOOT_REVOKE_KEY",
+                "depends_on": "SECURE_BOOT && (IDF_TARGET_ESP32S2 || IDF_TARGET_ESP32C3 || IDF_TARGET_ESP32S3)",
                 "help": "If this option is set, ROM bootloader will revoke the public key digest burned in efuse block\nif it fails to verify the signature of software bootloader with it.\nRevocation of keys does not happen when enabling secure boot. Once secure boot is enabled,\nkey revocation checks will be done on subsequent boot-up, while verifying the software bootloader\n\nThis feature provides a strong resistance against physical attacks on the device.\n\nNOTE: Once a digest slot is revoked, it can never be used again to verify an image\nThis can lead to permanent bricking of the device, in case all keys are revoked\nbecause of signature verification failure.",
                 "id": "SECURE_BOOT_ENABLE_AGGRESSIVE_KEY_REVOKE",
                 "name": "SECURE_BOOT_ENABLE_AGGRESSIVE_KEY_REVOKE",
@@ -2573,7 +981,7 @@
                                 "type": "bool"
                             }
                         ],
-                        "depends_on": "SOC_FLASH_ENCRYPTION_XTS_AES_256 && SECURE_FLASH_ENC_ENABLED",
+                        "depends_on": "(IDF_TARGET_ESP32S2 || IDF_TARGET_ESP32S3) && SECURE_FLASH_ENC_ENABLED",
                         "help": "Size of generated AES-XTS key.\n\nAES-128 uses a 256-bit key (32 bytes) which occupies one Efuse key block.\nAES-256 uses a 512-bit key (64 bytes) which occupies two Efuse key blocks.\n\nThis setting is ignored if either type of key is already burned to Efuse before the first boot.\nIn this case, the pre-burned key is used and no new key is generated.",
                         "id": "security-features-enable-flash-encryption-on-boot-read-docs-first--size-of-generated-aes-xts-key",
                         "name": "SECURE_FLASH_ENCRYPTION_KEYSIZE",
@@ -2663,7 +1071,7 @@
                     },
                     {
                         "children": [],
-                        "depends_on": "SECURE_BOOT_INSECURE && SOC_EFUSE_REVOKE_BOOT_KEY_DIGESTS",
+                        "depends_on": "SECURE_BOOT_INSECURE && !IDF_TARGET_ESP32",
                         "help": "If not set (default), during startup in the app all unused digest slots will be revoked.\nTo revoke unused slot will be called esp_efuse_set_digest_revoke(num_digest) for each digest.\nRevoking unused digest slots makes ensures that no trusted keys can be added later by an attacker.\nIf set, it means that you have a plan to use unused digests slots later.",
                         "id": "SECURE_BOOT_ALLOW_UNUSED_DIGEST_SLOTS",
                         "name": "SECURE_BOOT_ALLOW_UNUSED_DIGEST_SLOTS",
@@ -2728,16 +1136,6 @@
                 "type": "bool"
             },
             {
-                "children": [],
-                "depends_on": null,
-                "help": null,
-                "id": "SECURE_ROM_DL_MODE_ENABLED",
-                "name": "SECURE_ROM_DL_MODE_ENABLED",
-                "range": null,
-                "title": null,
-                "type": "bool"
-            },
-            {
                 "children": [
                     {
                         "children": [],
@@ -2751,7 +1149,7 @@
                     },
                     {
                         "children": [],
-                        "depends_on": "SOC_SUPPORTS_SECURE_DL_MODE && <choice SECURE_UART_ROM_DL_MODE>",
+                        "depends_on": "SECURE_TARGET_HAS_SECURE_ROM_DL_MODE && <choice SECURE_UART_ROM_DL_MODE>",
                         "help": "If set, during startup the app will burn an eFuse bit to permanently switch the UART ROM\nDownload Mode into a separate Secure Download mode. This option can only work if\nDownload Mode is not already disabled by eFuse.\n\nSecure Download mode limits the use of Download Mode functions to simple flash read,\nwrite and erase operations, plus a command to return a summary of currently enabled\nsecurity features.\n\nSecure Download mode is not compatible with the esptool.py flasher stub feature,\nespefuse.py, read/writing memory or registers, encrypted download, or any other\nfeatures that interact with unsupported Download Mode commands.\n\nSecure Download mode should be enabled in any application where Flash Encryption\nand/or Secure Boot is enabled. Disabling this option does not immediately cancel\nthe benefits of the security features, but it increases the potential \"attack\nsurface\" for an attacker to try and bypass them with a successful physical attack.\n\nIt is also possible to enable secure download mode at runtime by calling\nesp_efuse_enable_rom_secure_download_mode()\n\nNote: Secure Download mode is not available for ESP32 (includes revisions till ECO3).",
                         "id": "SECURE_ENABLE_SECURE_ROM_DL_MODE",
                         "name": "SECURE_ENABLE_SECURE_ROM_DL_MODE",
@@ -2782,46 +1180,6 @@
         "id": "security-features",
         "title": "Security features",
         "type": "menu"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "ESP_ROM_HAS_CRC_LE",
-        "name": "ESP_ROM_HAS_CRC_LE",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "ESP_ROM_HAS_CRC_BE",
-        "name": "ESP_ROM_HAS_CRC_BE",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "ESP_ROM_HAS_JPEG_DECODE",
-        "name": "ESP_ROM_HAS_JPEG_DECODE",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "ESP_ROM_SUPPORT_MULTIPLE_UART",
-        "name": "ESP_ROM_SUPPORT_MULTIPLE_UART",
-        "range": null,
-        "title": null,
-        "type": "bool"
     },
     {
         "children": [
@@ -2883,6 +1241,106 @@
     },
     {
         "children": [
+            {
+                "children": [],
+                "depends_on": "!IDF_CMAKE",
+                "help": "The serial port that's connected to the ESP chip. This can be overridden by setting the ESPPORT\nenvironment variable.\n\nThis value is ignored when using the CMake-based build system or idf.py.",
+                "id": "ESPTOOLPY_PORT",
+                "name": "ESPTOOLPY_PORT",
+                "range": null,
+                "title": "Default serial port",
+                "type": "string"
+            },
+            {
+                "children": [
+                    {
+                        "children": [],
+                        "depends_on": "<choice ESPTOOLPY_BAUD>",
+                        "help": null,
+                        "id": "ESPTOOLPY_BAUD_115200B",
+                        "name": "ESPTOOLPY_BAUD_115200B",
+                        "range": null,
+                        "title": "115200 baud",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "<choice ESPTOOLPY_BAUD>",
+                        "help": null,
+                        "id": "ESPTOOLPY_BAUD_230400B",
+                        "name": "ESPTOOLPY_BAUD_230400B",
+                        "range": null,
+                        "title": "230400 baud",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "<choice ESPTOOLPY_BAUD>",
+                        "help": null,
+                        "id": "ESPTOOLPY_BAUD_921600B",
+                        "name": "ESPTOOLPY_BAUD_921600B",
+                        "range": null,
+                        "title": "921600 baud",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "<choice ESPTOOLPY_BAUD>",
+                        "help": null,
+                        "id": "ESPTOOLPY_BAUD_2MB",
+                        "name": "ESPTOOLPY_BAUD_2MB",
+                        "range": null,
+                        "title": "2Mbaud",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "<choice ESPTOOLPY_BAUD>",
+                        "help": null,
+                        "id": "ESPTOOLPY_BAUD_OTHER",
+                        "name": "ESPTOOLPY_BAUD_OTHER",
+                        "range": null,
+                        "title": "Other baud rate",
+                        "type": "bool"
+                    }
+                ],
+                "depends_on": "!IDF_CMAKE",
+                "help": "Default baud rate to use while communicating with the ESP chip. Can be overridden by\nsetting the ESPBAUD variable.\n\nThis value is ignored when using the CMake-based build system or idf.py.",
+                "id": "serial-flasher-config-default-baud-rate",
+                "name": "ESPTOOLPY_BAUD",
+                "title": "Default baud rate",
+                "type": "choice"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": null,
+                "id": "ESPTOOLPY_BAUD_OTHER_VAL",
+                "name": "ESPTOOLPY_BAUD_OTHER_VAL",
+                "range": null,
+                "title": "Other baud rate value",
+                "type": "int"
+            },
+            {
+                "children": [],
+                "depends_on": "!IDF_CMAKE",
+                "help": null,
+                "id": "ESPTOOLPY_BAUD",
+                "name": "ESPTOOLPY_BAUD",
+                "range": null,
+                "title": null,
+                "type": "int"
+            },
+            {
+                "children": [],
+                "depends_on": "!IDF_CMAKE",
+                "help": "The flasher tool can send data compressed using zlib, letting the ROM on the ESP chip\ndecompress it on the fly before flashing it. For most payloads, this should result in a\nspeed increase.",
+                "id": "ESPTOOLPY_COMPRESSED",
+                "name": "ESPTOOLPY_COMPRESSED",
+                "range": null,
+                "title": "Use compressed upload",
+                "type": "bool"
+            },
             {
                 "children": [],
                 "depends_on": null,
@@ -3124,36 +1582,6 @@
                         "range": null,
                         "title": "16 MB",
                         "type": "bool"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": "<choice ESPTOOLPY_FLASHSIZE>",
-                        "help": null,
-                        "id": "ESPTOOLPY_FLASHSIZE_32MB",
-                        "name": "ESPTOOLPY_FLASHSIZE_32MB",
-                        "range": null,
-                        "title": "32 MB",
-                        "type": "bool"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": "<choice ESPTOOLPY_FLASHSIZE>",
-                        "help": null,
-                        "id": "ESPTOOLPY_FLASHSIZE_64MB",
-                        "name": "ESPTOOLPY_FLASHSIZE_64MB",
-                        "range": null,
-                        "title": "64 MB",
-                        "type": "bool"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": "<choice ESPTOOLPY_FLASHSIZE>",
-                        "help": null,
-                        "id": "ESPTOOLPY_FLASHSIZE_128MB",
-                        "name": "ESPTOOLPY_FLASHSIZE_128MB",
-                        "range": null,
-                        "title": "128 MB",
-                        "type": "bool"
                     }
                 ],
                 "depends_on": null,
@@ -3262,6 +1690,106 @@
                 "range": null,
                 "title": null,
                 "type": "string"
+            },
+            {
+                "children": [
+                    {
+                        "children": [],
+                        "depends_on": "<choice ESPTOOLPY_MONITOR_BAUD>",
+                        "help": null,
+                        "id": "ESPTOOLPY_MONITOR_BAUD_CONSOLE",
+                        "name": "ESPTOOLPY_MONITOR_BAUD_CONSOLE",
+                        "range": null,
+                        "title": "Same as UART console baud rate",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "<choice ESPTOOLPY_MONITOR_BAUD>",
+                        "help": null,
+                        "id": "ESPTOOLPY_MONITOR_BAUD_9600B",
+                        "name": "ESPTOOLPY_MONITOR_BAUD_9600B",
+                        "range": null,
+                        "title": "9600 bps",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "<choice ESPTOOLPY_MONITOR_BAUD>",
+                        "help": null,
+                        "id": "ESPTOOLPY_MONITOR_BAUD_57600B",
+                        "name": "ESPTOOLPY_MONITOR_BAUD_57600B",
+                        "range": null,
+                        "title": "57600 bps",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "<choice ESPTOOLPY_MONITOR_BAUD>",
+                        "help": null,
+                        "id": "ESPTOOLPY_MONITOR_BAUD_115200B",
+                        "name": "ESPTOOLPY_MONITOR_BAUD_115200B",
+                        "range": null,
+                        "title": "115200 bps",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "<choice ESPTOOLPY_MONITOR_BAUD>",
+                        "help": null,
+                        "id": "ESPTOOLPY_MONITOR_BAUD_230400B",
+                        "name": "ESPTOOLPY_MONITOR_BAUD_230400B",
+                        "range": null,
+                        "title": "230400 bps",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "<choice ESPTOOLPY_MONITOR_BAUD>",
+                        "help": null,
+                        "id": "ESPTOOLPY_MONITOR_BAUD_921600B",
+                        "name": "ESPTOOLPY_MONITOR_BAUD_921600B",
+                        "range": null,
+                        "title": "921600 bps",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "<choice ESPTOOLPY_MONITOR_BAUD>",
+                        "help": null,
+                        "id": "ESPTOOLPY_MONITOR_BAUD_2MB",
+                        "name": "ESPTOOLPY_MONITOR_BAUD_2MB",
+                        "range": null,
+                        "title": "2 Mbps",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "<choice ESPTOOLPY_MONITOR_BAUD>",
+                        "help": null,
+                        "id": "ESPTOOLPY_MONITOR_BAUD_OTHER",
+                        "name": "ESPTOOLPY_MONITOR_BAUD_OTHER",
+                        "range": null,
+                        "title": "Custom baud rate",
+                        "type": "bool"
+                    }
+                ],
+                "depends_on": null,
+                "help": "Baud rate to use when running 'idf.py monitor' or 'make monitor'\nto view serial output from a running chip.\n\nIf \"Same as UART Console baud rate\" is chosen then the value will\nfollow the \"UART Console baud rate\" config item.\n\nCan override by setting the MONITORBAUD environment variable.",
+                "id": "serial-flasher-config--idf-py-monitor-baud-rate",
+                "name": "ESPTOOLPY_MONITOR_BAUD",
+                "title": "'idf.py monitor' baud rate",
+                "type": "choice"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": null,
+                "id": "ESPTOOLPY_MONITOR_BAUD_OTHER_VAL",
+                "name": "ESPTOOLPY_MONITOR_BAUD_OTHER_VAL",
+                "range": null,
+                "title": "Custom baud rate value",
+                "type": "int"
             },
             {
                 "children": [],
@@ -3393,7 +1921,7 @@
             },
             {
                 "children": [],
-                "depends_on": "!ESP32_COMPATIBLE_PRE_V3_1_BOOTLOADERS && !IDF_TARGET_LINUX",
+                "depends_on": "!ESP32_COMPATIBLE_PRE_V3_1_BOOTLOADERS",
                 "help": "Generate an MD5 checksum for the partition table for protecting the\nintegrity of the table. The generation should be turned off for legacy\nbootloaders which cannot recognize the MD5 checksum in the partition\ntable.",
                 "id": "PARTITION_TABLE_MD5",
                 "name": "PARTITION_TABLE_MD5",
@@ -3521,7 +2049,7 @@
             },
             {
                 "children": [],
-                "depends_on": null,
+                "depends_on": "IDF_CMAKE",
                 "help": "When expanding the __FILE__ and __BASE_FILE__ macros, replace paths inside ESP-IDF\nwith paths relative to the placeholder string \"IDF\", and convert paths inside the\nproject directory to relative paths.\n\nThis allows building the project with assertions or other code that embeds file paths,\nwithout the binary containing the exact path to the IDF or project directories.\n\nThis option passes -fmacro-prefix-map options to the GCC command line. To replace additional\npaths in your binaries, modify the project CMakeLists.txt file to pass custom -fmacro-prefix-map or\n-ffile-prefix-map arguments.",
                 "id": "COMPILER_HIDE_PATHS_MACROS",
                 "is_menuconfig": true,
@@ -4139,16 +2667,6 @@
                                     },
                                     {
                                         "children": [],
-                                        "depends_on": "SPIRAM_MODE_OCT && IDF_TARGET_ESP32S3 && ESP32_SPIRAM_SUPPORT",
-                                        "help": "Enable MSPI Error-Correcting Code function when accessing SPIRAM.\n\nIf enabled, 1/16 of the SPI RAM total size will be reserved for error-correcting code.",
-                                        "id": "SPIRAM_ECC_ENABLE",
-                                        "name": "SPIRAM_ECC_ENABLE",
-                                        "range": null,
-                                        "title": "Enable SPI RAM ECC",
-                                        "type": "bool"
-                                    },
-                                    {
-                                        "children": [],
                                         "depends_on": "(SPIRAM_USE_MEMMAP || SPIRAM_USE_CAPS_ALLOC || SPIRAM_USE_MALLOC) && ESP32_REV_MIN < 3 && ESP32_SPIRAM_SUPPORT",
                                         "help": "Revision 1 of the ESP32 has a bug that can cause a write to PSRAM not to take place in some situations\nwhen the cache line needs to be fetched from external RAM and an interrupt occurs. This enables a\nfix in the compiler (-mfix-esp32-psram-cache-issue) that makes sure the specific code that is\nvulnerable to this will not be emitted.\n\nThis will also not use any bits of newlib that are located in ROM, opting for a version that is\ncompiled with the workaround and located in flash instead.\n\nThe workaround is not required for ESP32 revision 3 and above.",
                                         "id": "SPIRAM_CACHE_WORKAROUND",
@@ -4588,10 +3106,155 @@
                         "children": [
                             {
                                 "children": [],
+                                "depends_on": null,
+                                "help": "Bytes of memory to reserve for ULP coprocessor firmware & data.\n\nData is reserved at the beginning of RTC slow memory.",
+                                "id": "ESP32_ULP_COPROC_RESERVE_MEM",
+                                "name": "ESP32_ULP_COPROC_RESERVE_MEM",
+                                "range": [
+                                    0,
+                                    0
+                                ],
+                                "title": "RTC slow memory reserved for coprocessor",
+                                "type": "int"
+                            }
+                        ],
+                        "depends_on": null,
+                        "help": "Set to 'y' if you plan to load a firmware for the coprocessor.\n\nIf this option is enabled, further coprocessor configuration will appear in the Components menu.",
+                        "id": "ESP32_ULP_COPROC_ENABLED",
+                        "name": "ESP32_ULP_COPROC_ENABLED",
+                        "range": null,
+                        "title": "Enable Ultra Low Power (ULP) Coprocessor",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "The FreeRTOS panic and unhandled exception handers can detect a JTAG OCD debugger and\ninstead of panicking, have the debugger stop on the offending instruction.",
+                        "id": "ESP32_DEBUG_OCDAWARE",
+                        "name": "ESP32_DEBUG_OCDAWARE",
+                        "range": null,
+                        "title": "Make exception and panic handlers JTAG/OCD aware",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [
+                            {
+                                "children": [
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice ESP32_BROWNOUT_DET_LVL_SEL>",
+                                        "help": null,
+                                        "id": "ESP32_BROWNOUT_DET_LVL_SEL_0",
+                                        "name": "ESP32_BROWNOUT_DET_LVL_SEL_0",
+                                        "range": null,
+                                        "title": "2.43V +/- 0.05",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice ESP32_BROWNOUT_DET_LVL_SEL>",
+                                        "help": null,
+                                        "id": "ESP32_BROWNOUT_DET_LVL_SEL_1",
+                                        "name": "ESP32_BROWNOUT_DET_LVL_SEL_1",
+                                        "range": null,
+                                        "title": "2.48V +/- 0.05",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice ESP32_BROWNOUT_DET_LVL_SEL>",
+                                        "help": null,
+                                        "id": "ESP32_BROWNOUT_DET_LVL_SEL_2",
+                                        "name": "ESP32_BROWNOUT_DET_LVL_SEL_2",
+                                        "range": null,
+                                        "title": "2.58V +/- 0.05",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice ESP32_BROWNOUT_DET_LVL_SEL>",
+                                        "help": null,
+                                        "id": "ESP32_BROWNOUT_DET_LVL_SEL_3",
+                                        "name": "ESP32_BROWNOUT_DET_LVL_SEL_3",
+                                        "range": null,
+                                        "title": "2.62V +/- 0.05",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice ESP32_BROWNOUT_DET_LVL_SEL>",
+                                        "help": null,
+                                        "id": "ESP32_BROWNOUT_DET_LVL_SEL_4",
+                                        "name": "ESP32_BROWNOUT_DET_LVL_SEL_4",
+                                        "range": null,
+                                        "title": "2.67V +/- 0.05",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice ESP32_BROWNOUT_DET_LVL_SEL>",
+                                        "help": null,
+                                        "id": "ESP32_BROWNOUT_DET_LVL_SEL_5",
+                                        "name": "ESP32_BROWNOUT_DET_LVL_SEL_5",
+                                        "range": null,
+                                        "title": "2.70V +/- 0.05",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice ESP32_BROWNOUT_DET_LVL_SEL>",
+                                        "help": null,
+                                        "id": "ESP32_BROWNOUT_DET_LVL_SEL_6",
+                                        "name": "ESP32_BROWNOUT_DET_LVL_SEL_6",
+                                        "range": null,
+                                        "title": "2.77V +/- 0.05",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice ESP32_BROWNOUT_DET_LVL_SEL>",
+                                        "help": null,
+                                        "id": "ESP32_BROWNOUT_DET_LVL_SEL_7",
+                                        "name": "ESP32_BROWNOUT_DET_LVL_SEL_7",
+                                        "range": null,
+                                        "title": "2.80V +/- 0.05",
+                                        "type": "bool"
+                                    }
+                                ],
+                                "depends_on": "ESP32_BROWNOUT_DET",
+                                "help": "The brownout detector will reset the chip when the supply voltage is approximately\nbelow this level. Note that there may be some variation of brownout voltage level\nbetween each ESP32 chip.\n\n#The voltage levels here are estimates, more work needs to be done to figure out the exact voltages\n#of the brownout threshold levels.",
+                                "id": "component-config-esp32-specific-hardware-brownout-detect-reset-brownout-voltage-level",
+                                "name": "ESP32_BROWNOUT_DET_LVL_SEL",
+                                "title": "Brownout voltage level",
+                                "type": "choice"
+                            }
+                        ],
+                        "depends_on": "!IDF_ENV_FPGA",
+                        "help": "The ESP32 has a built-in brownout detector which can detect if the voltage is lower than\na specific value. If this happens, it will reset the chip in order to prevent unintended\nbehaviour.",
+                        "id": "ESP32_BROWNOUT_DET",
+                        "name": "ESP32_BROWNOUT_DET",
+                        "range": null,
+                        "title": "Hardware brownout detect & reset",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": null,
+                        "id": "ESP32_BROWNOUT_DET_LVL",
+                        "name": "ESP32_BROWNOUT_DET_LVL",
+                        "range": null,
+                        "title": null,
+                        "type": "int"
+                    },
+                    {
+                        "children": [
+                            {
+                                "children": [],
                                 "depends_on": "<choice ESP32_TIME_SYSCALL>",
                                 "help": null,
-                                "id": "ESP32_TIME_SYSCALL_USE_RTC_HRT",
-                                "name": "ESP32_TIME_SYSCALL_USE_RTC_HRT",
+                                "id": "ESP32_TIME_SYSCALL_USE_RTC_FRC1",
+                                "name": "ESP32_TIME_SYSCALL_USE_RTC_FRC1",
                                 "range": null,
                                 "title": "RTC and high-resolution timer",
                                 "type": "bool"
@@ -4610,8 +3273,8 @@
                                 "children": [],
                                 "depends_on": "<choice ESP32_TIME_SYSCALL>",
                                 "help": null,
-                                "id": "ESP32_TIME_SYSCALL_USE_HRT",
-                                "name": "ESP32_TIME_SYSCALL_USE_HRT",
+                                "id": "ESP32_TIME_SYSCALL_USE_FRC1",
+                                "name": "ESP32_TIME_SYSCALL_USE_FRC1",
                                 "range": null,
                                 "title": "High-resolution timer",
                                 "type": "bool"
@@ -5092,42 +3755,6 @@
                         "id": "component-config-hardware-settings-sleep-config",
                         "title": "Sleep Config",
                         "type": "menu"
-                    },
-                    {
-                        "children": [
-                            {
-                                "children": [],
-                                "depends_on": "ESP_CONSOLE_USB_SERIAL_JTAG || ESP_CONSOLE_SECONDARY_USB_SERIAL_JTAG",
-                                "help": "When the chip goes sleep or software reset, the clock source would change to XTAL\nand switch off the BBPLL clock for saving power. However, this might make the\nUSB_SERIAL_JTAG down which depends on BBPLL as its unique clock source.\nTherefore, this is used for keeping bbpll clock always on when USB_SERIAL_JTAG PORT is using.\nIf you want to use USB_SERIAL_JTAG under sw_reset case or sleep-wakeup case, you shoule select\nthis option. But be aware that this might increase the power consumption.",
-                                "id": "RTC_CLOCK_BBPLL_POWER_ON_WITH_USB",
-                                "name": "RTC_CLOCK_BBPLL_POWER_ON_WITH_USB",
-                                "range": null,
-                                "title": "Keep BBPLL clock always work",
-                                "type": "bool"
-                            }
-                        ],
-                        "depends_on": null,
-                        "id": "component-config-hardware-settings-rtc-clock-config",
-                        "title": "RTC Clock Config",
-                        "type": "menu"
-                    },
-                    {
-                        "children": [
-                            {
-                                "children": [],
-                                "depends_on": null,
-                                "help": "Place peripheral control functions (e.g. periph_module_reset) into IRAM,\nso that these functions can be IRAM-safe and able to be called in the other IRAM interrupt context.",
-                                "id": "PERIPH_CTRL_FUNC_IN_IRAM",
-                                "name": "PERIPH_CTRL_FUNC_IN_IRAM",
-                                "range": null,
-                                "title": "Place peripheral control functions into IRAM",
-                                "type": "bool"
-                            }
-                        ],
-                        "depends_on": null,
-                        "id": "component-config-hardware-settings-peripheral-control",
-                        "title": "Peripheral Control",
-                        "type": "menu"
                     }
                 ],
                 "depends_on": null,
@@ -5181,8 +3808,8 @@
                             },
                             {
                                 "children": [],
-                                "depends_on": "!IDF_TARGET_ESP32C2 && <choice ESP_SYSTEM_PANIC>",
-                                "help": "Invoke gdbstub on the serial port, allowing for gdb to attach to it and to do a debug on runtime.",
+                                "depends_on": "<choice ESP_SYSTEM_PANIC>",
+                                "help": "Invoke gdbstub on the serial port, allowing for gdb to attach to it and to do a debug on runtime.\nThis feature will switch system to single core mode.",
                                 "id": "ESP_SYSTEM_GDBSTUB_RUNTIME",
                                 "name": "ESP_SYSTEM_GDBSTUB_RUNTIME",
                                 "range": null,
@@ -5239,7 +3866,7 @@
                     },
                     {
                         "children": [],
-                        "depends_on": "!IDF_TARGET_ESP32C2",
+                        "depends_on": null,
                         "help": null,
                         "id": "ESP_SYSTEM_RTC_FAST_MEM_AS_HEAP_DEPCHECK",
                         "name": "ESP_SYSTEM_RTC_FAST_MEM_AS_HEAP_DEPCHECK",
@@ -5750,22 +4377,12 @@
                     },
                     {
                         "children": [],
-                        "depends_on": "!ESP32_TRAX && !ESP32S2_TRAX && !ESP32S3_TRAX",
+                        "depends_on": "!ESP32_TRAX && !ESP32S2_TRAX",
                         "help": "Debug stubs are used by OpenOCD to execute pre-compiled onboard code\nwhich does some useful debugging stuff, e.g. GCOV data dump.",
                         "id": "ESP_DEBUG_STUBS_ENABLE",
                         "name": "ESP_DEBUG_STUBS_ENABLE",
                         "range": null,
-                        "title": "OpenOCD debug stubs",
-                        "type": "bool"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": "The FreeRTOS panic and unhandled exception handers can detect a JTAG OCD debugger and\ninstead of panicking, have the debugger stop on the offending instruction.",
-                        "id": "ESP_DEBUG_OCDAWARE",
-                        "name": "ESP_DEBUG_OCDAWARE",
-                        "range": null,
-                        "title": "Make exception and panic handlers JTAG/OCD aware",
+                        "title": null,
                         "type": "bool"
                     },
                     {
@@ -5797,125 +4414,6 @@
                         "name": "ESP_SYSTEM_CHECK_INT_LEVEL",
                         "title": "Interrupt level to use for Interrupt Watchdog and other system checks",
                         "type": "choice"
-                    },
-                    {
-                        "children": [
-                            {
-                                "children": [
-                                    {
-                                        "children": [
-                                            {
-                                                "children": [],
-                                                "depends_on": "<choice ESP_BROWNOUT_DET_LVL_SEL>",
-                                                "help": null,
-                                                "id": "ESP_BROWNOUT_DET_LVL_SEL_0",
-                                                "name": "ESP_BROWNOUT_DET_LVL_SEL_0",
-                                                "range": null,
-                                                "title": "2.43V +/- 0.05",
-                                                "type": "bool"
-                                            },
-                                            {
-                                                "children": [],
-                                                "depends_on": "<choice ESP_BROWNOUT_DET_LVL_SEL>",
-                                                "help": null,
-                                                "id": "ESP_BROWNOUT_DET_LVL_SEL_1",
-                                                "name": "ESP_BROWNOUT_DET_LVL_SEL_1",
-                                                "range": null,
-                                                "title": "2.48V +/- 0.05",
-                                                "type": "bool"
-                                            },
-                                            {
-                                                "children": [],
-                                                "depends_on": "<choice ESP_BROWNOUT_DET_LVL_SEL>",
-                                                "help": null,
-                                                "id": "ESP_BROWNOUT_DET_LVL_SEL_2",
-                                                "name": "ESP_BROWNOUT_DET_LVL_SEL_2",
-                                                "range": null,
-                                                "title": "2.58V +/- 0.05",
-                                                "type": "bool"
-                                            },
-                                            {
-                                                "children": [],
-                                                "depends_on": "<choice ESP_BROWNOUT_DET_LVL_SEL>",
-                                                "help": null,
-                                                "id": "ESP_BROWNOUT_DET_LVL_SEL_3",
-                                                "name": "ESP_BROWNOUT_DET_LVL_SEL_3",
-                                                "range": null,
-                                                "title": "2.62V +/- 0.05",
-                                                "type": "bool"
-                                            },
-                                            {
-                                                "children": [],
-                                                "depends_on": "<choice ESP_BROWNOUT_DET_LVL_SEL>",
-                                                "help": null,
-                                                "id": "ESP_BROWNOUT_DET_LVL_SEL_4",
-                                                "name": "ESP_BROWNOUT_DET_LVL_SEL_4",
-                                                "range": null,
-                                                "title": "2.67V +/- 0.05",
-                                                "type": "bool"
-                                            },
-                                            {
-                                                "children": [],
-                                                "depends_on": "<choice ESP_BROWNOUT_DET_LVL_SEL>",
-                                                "help": null,
-                                                "id": "ESP_BROWNOUT_DET_LVL_SEL_5",
-                                                "name": "ESP_BROWNOUT_DET_LVL_SEL_5",
-                                                "range": null,
-                                                "title": "2.70V +/- 0.05",
-                                                "type": "bool"
-                                            },
-                                            {
-                                                "children": [],
-                                                "depends_on": "<choice ESP_BROWNOUT_DET_LVL_SEL>",
-                                                "help": null,
-                                                "id": "ESP_BROWNOUT_DET_LVL_SEL_6",
-                                                "name": "ESP_BROWNOUT_DET_LVL_SEL_6",
-                                                "range": null,
-                                                "title": "2.77V +/- 0.05",
-                                                "type": "bool"
-                                            },
-                                            {
-                                                "children": [],
-                                                "depends_on": "<choice ESP_BROWNOUT_DET_LVL_SEL>",
-                                                "help": null,
-                                                "id": "ESP_BROWNOUT_DET_LVL_SEL_7",
-                                                "name": "ESP_BROWNOUT_DET_LVL_SEL_7",
-                                                "range": null,
-                                                "title": "2.80V +/- 0.05",
-                                                "type": "bool"
-                                            }
-                                        ],
-                                        "depends_on": "ESP_BROWNOUT_DET",
-                                        "help": "The brownout detector will reset the chip when the supply voltage is approximately\nbelow this level. Note that there may be some variation of brownout voltage level\nbetween each ESP chip.\n\n#The voltage levels here are estimates, more work needs to be done to figure out the exact voltages\n#of the brownout threshold levels.",
-                                        "id": "component-config-esp-system-settings-brownout-detector-hardware-brownout-detect-reset-brownout-voltage-level",
-                                        "name": "ESP_BROWNOUT_DET_LVL_SEL",
-                                        "title": "Brownout voltage level",
-                                        "type": "choice"
-                                    }
-                                ],
-                                "depends_on": "!IDF_ENV_FPGA",
-                                "help": "The ESP has a built-in brownout detector which can detect if the voltage is lower than\na specific value. If this happens, it will reset the chip in order to prevent unintended\nbehaviour.",
-                                "id": "ESP_BROWNOUT_DET",
-                                "name": "ESP_BROWNOUT_DET",
-                                "range": null,
-                                "title": "Hardware brownout detect & reset",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": null,
-                                "help": null,
-                                "id": "ESP_BROWNOUT_DET_LVL",
-                                "name": "ESP_BROWNOUT_DET_LVL",
-                                "range": null,
-                                "title": null,
-                                "type": "int"
-                            }
-                        ],
-                        "depends_on": null,
-                        "id": "component-config-esp-system-settings-brownout-detector",
-                        "title": "Brownout Detector",
-                        "type": "menu"
                     }
                 ],
                 "depends_on": null,
@@ -5925,57 +4423,6 @@
             },
             {
                 "children": [
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": "Configure the IPC tasks stack size. An IPC task runs on each core (in dual core mode), and allows for\ncross-core function calls. See IPC documentation for more details. The default IPC stack size should be\nenough for most common simple use cases. However, users can increase/decrease the stack size to their\nneeds.",
-                        "id": "ESP_IPC_TASK_STACK_SIZE",
-                        "name": "ESP_IPC_TASK_STACK_SIZE",
-                        "range": [
-                            512,
-                            65536
-                        ],
-                        "title": "Inter-Processor Call (IPC) task stack size",
-                        "type": "int"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": "!FREERTOS_UNICORE",
-                        "help": "If this option is not enabled then the IPC task will keep behavior same as prior to that of ESP-IDF v4.0,\nhence IPC task will run at (configMAX_PRIORITIES - 1) priority.",
-                        "id": "ESP_IPC_USES_CALLERS_PRIORITY",
-                        "name": "ESP_IPC_USES_CALLERS_PRIORITY",
-                        "range": null,
-                        "title": "IPC runs at caller's priority",
-                        "type": "bool"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": "The IPC ISR feature is similar to the IPC feature except that the callback function is executed in the\ncontext of a High Priority Interrupt. The IPC ISR feature is itended for low latency execution of simple\ncallbacks written in assembly on another CPU. Due to being run in a High Priority Interrupt, the assembly\ncallbacks must be written with particular restrictions (see \"IPC\" and \"High-Level Interrupt\" docs for more\ndetails).",
-                        "id": "ESP_IPC_ISR_ENABLE",
-                        "name": "ESP_IPC_ISR_ENABLE",
-                        "range": null,
-                        "title": null,
-                        "type": "bool"
-                    }
-                ],
-                "depends_on": null,
-                "id": "component-config-ipc-inter-processor-call-",
-                "title": "IPC (Inter-Processor Call)",
-                "type": "menu"
-            },
-            {
-                "children": [
-                    {
-                        "children": [],
-                        "depends_on": "IDF_TARGET_ESP32",
-                        "help": "This will cause the FreeRTOS component to compile with the SMP FreeRTOS kernel instead.\nTHIS FEATURE IS UNDER ACTIVE DEVELOPMENT, users use this at their own risk.",
-                        "id": "FREERTOS_SMP",
-                        "name": "FREERTOS_SMP",
-                        "range": null,
-                        "title": "Run the SMP FreeRTOS kernel instead (FEATURE UNDER DEVELOPMENT)",
-                        "type": "bool"
-                    },
                     {
                         "children": [],
                         "depends_on": null,
@@ -6193,6 +4640,46 @@
                         "type": "int"
                     },
                     {
+                        "children": [
+                            {
+                                "children": [],
+                                "depends_on": "!COMPILER_OPTIMIZATION_ASSERTIONS_DISABLE && <choice FREERTOS_ASSERT>",
+                                "help": "If a FreeRTOS configASSERT() fails, FreeRTOS will abort() and\nhalt execution. The panic handler can be configured to handle\nthe outcome of an abort() in different ways.\n\nIf assertions are disabled for the entire project, they are also\ndisabled in FreeRTOS and this option is unavailable.",
+                                "id": "FREERTOS_ASSERT_FAIL_ABORT",
+                                "name": "FREERTOS_ASSERT_FAIL_ABORT",
+                                "range": null,
+                                "title": "abort() on failed assertions",
+                                "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "<choice FREERTOS_ASSERT>",
+                                "help": "If a FreeRTOS assertion fails, print it out and continue.",
+                                "id": "FREERTOS_ASSERT_FAIL_PRINT_CONTINUE",
+                                "name": "FREERTOS_ASSERT_FAIL_PRINT_CONTINUE",
+                                "range": null,
+                                "title": "Print and continue failed assertions",
+                                "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "<choice FREERTOS_ASSERT>",
+                                "help": "FreeRTOS configASSERT() will not be compiled into the binary.",
+                                "id": "FREERTOS_ASSERT_DISABLE",
+                                "name": "FREERTOS_ASSERT_DISABLE",
+                                "range": null,
+                                "title": "Disable FreeRTOS assertions",
+                                "type": "bool"
+                            }
+                        ],
+                        "depends_on": null,
+                        "help": "Failed FreeRTOS configASSERT() assertions can be configured to\nbehave in different ways.\n\nBy default these behave the same as the global project assert settings.",
+                        "id": "component-config-freertos-freertos-assertions",
+                        "name": "FREERTOS_ASSERT",
+                        "title": "FreeRTOS assertions",
+                        "type": "choice"
+                    },
+                    {
                         "children": [],
                         "depends_on": null,
                         "help": "The idle task has its own stack, sized in bytes. The default size is enough for most uses. Size can be\nreduced to 768 bytes if no (or simple) FreeRTOS idle hooks are used and pthread local storage or FreeRTOS\nlocal storage cleanup callbacks are not used.\n\nThe stack size may need to be increased above the default if the app installs idle or thread local storage\ncleanup hooks that use a lot of stack memory.",
@@ -6221,31 +4708,11 @@
                     {
                         "children": [],
                         "depends_on": null,
-                        "help": "- If enabled, configUSE_IDLE_HOOK will be defined as 1 in FreeRTOS.\n- The application must provide the hook function ``void vApplicationIdleHook( void );``\n- ``vApplicationIdleHook()`` is called from FreeRTOS idle task(s)\n- The FreeRTOS idle hook is NOT the same as the ESP-IDF Idle Hook, but both can be enabled\n  simultaneously.",
-                        "id": "FREERTOS_USE_IDLE_HOOK",
-                        "name": "FREERTOS_USE_IDLE_HOOK",
+                        "help": "FreeRTOS offers a number of hooks/callback functions that are called when a timer\ntick happens, the idle thread runs etc. esp-idf replaces these by runtime registerable\nhooks using the esp_register_freertos_xxx_hook system, but for legacy reasons the old\nhooks can also still be enabled. Please enable this only if you have code that for some\nreason can't be migrated to the esp_register_freertos_xxx_hook system.",
+                        "id": "FREERTOS_LEGACY_HOOKS",
+                        "name": "FREERTOS_LEGACY_HOOKS",
                         "range": null,
-                        "title": "Use FreeRTOS idle hook",
-                        "type": "bool"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": "FREERTOS_SMP",
-                        "help": "- The application must provide the hook function ``void vApplicationMinimalIdleHook( void );``\n- ``vApplicationMinimalIdleHook()`` is called from FreeRTOS idle task(s)",
-                        "id": "FREERTOS_USE_MINIMAL_IDLE_HOOK",
-                        "name": "FREERTOS_USE_MINIMAL_IDLE_HOOK",
-                        "range": null,
-                        "title": "Use FreeRTOS minimal idle hook",
-                        "type": "bool"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": "- If enabled, configUSE_TICK_HOOK will be defined as 1 in FreeRTOS.\n- The application must provide the hook function ``void vApplicationTickHook( void );``\n- ``vApplicationTickHook()`` is called from FreeRTOS's tick handling function ``xTaskIncrementTick()``\n- The FreeRTOS tick hook is NOT the same as the ESP-IDF Tick Interrupt Hook, but both can be enabled\n  simultaneously.",
-                        "id": "FREERTOS_USE_TICK_HOOK",
-                        "name": "FREERTOS_USE_TICK_HOOK",
-                        "range": null,
-                        "title": "Use FreeRTOS tick hook",
+                        "title": "Use FreeRTOS legacy hooks",
                         "type": "bool"
                     },
                     {
@@ -6260,16 +4727,6 @@
                         ],
                         "title": "Maximum task name length",
                         "type": "int"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": "This option enables the configENABLE_BACKWARD_COMPATIBILITY option, thus allowing the usage\nof legacy function names and types present in versions prior to FreeRTOS v8.0.0.",
-                        "id": "FREERTOS_ENABLE_BACKWARD_COMPATIBILITY",
-                        "name": "FREERTOS_ENABLE_BACKWARD_COMPATIBILITY",
-                        "range": null,
-                        "title": "Support legacy FreeRTOS API",
-                        "type": "bool"
                     },
                     {
                         "children": [],
@@ -6439,7 +4896,7 @@
                     },
                     {
                         "children": [],
-                        "depends_on": "COMPILER_OPTIMIZATION_DEFAULT || ESP_COREDUMP_ENABLE || ESP_GDBSTUB_ENABLED",
+                        "depends_on": "COMPILER_OPTIMIZATION_DEFAULT",
                         "help": "If enabled, all FreeRTOS task functions will be enclosed in a wrapper function.\nIf a task function mistakenly returns (i.e. does not delete), the call flow will\nreturn to the wrapper function. The wrapper function will then log an error and\nabort the application. This option is also required for GDB backtraces and C++\nexceptions to work correctly inside top-level task functions.",
                         "id": "FREERTOS_TASK_FUNCTION_WRAPPER",
                         "name": "FREERTOS_TASK_FUNCTION_WRAPPER",
@@ -6480,7 +4937,7 @@
                     {
                         "children": [],
                         "depends_on": null,
-                        "help": "Hidden option, gets selected by CONFIG_ESP_DEBUG_OCDAWARE",
+                        "help": "Hidden option, gets selected by CONFIG_ESPxx_DEBUG_OCDAWARE",
                         "id": "FREERTOS_DEBUG_OCDAWARE",
                         "name": "FREERTOS_DEBUG_OCDAWARE",
                         "range": null,
@@ -6511,7 +4968,7 @@
                             }
                         ],
                         "depends_on": null,
-                        "help": "When enabled, the functions related to snapshots, such as vTaskGetSnapshot or uxTaskGetSnapshotAll,\nare compiled and linked. Task snapshots are primarily used by GDB Stub and Core dump.",
+                        "help": "When enabled, the functions related to snapshots, such as vTaskGetSnapshot or uxTaskGetSnapshotAll,\nare compiled and linked.",
                         "id": "FREERTOS_ENABLE_TASK_SNAPSHOT",
                         "name": "FREERTOS_ENABLE_TASK_SNAPSHOT",
                         "range": null,
@@ -6788,7 +5245,7 @@
                             }
                         ],
                         "depends_on": null,
-                        "help": "Choose what sort of timestamp is displayed in the log output:\n\n- Milliseconds since boot is calulated from the RTOS tick count multiplied\n  by the tick period. This time will reset after a software reboot.\n  e.g. (90000)\n\n- System time is taken from POSIX time functions which use the chip's\n  RTC and high resoultion timers to maintain an accurate time. The system time is\n  initialized to 0 on startup, it can be set with an SNTP sync, or with\n  POSIX time functions. This time will not reset after a software reboot.\n  e.g. (00:01:30.000)\n\n- NOTE: Currently this will not get used in logging from binary blobs\n  (i.e WiFi & Bluetooth libraries), these will always print\n  milliseconds since boot.",
+                        "help": "Choose what sort of timestamp is displayed in the log output:\n\n- Milliseconds since boot is calulated from the RTOS tick count multiplied\n  by the tick period. This time will reset after a software reboot.\n  e.g. (90000)\n\n- System time is taken from POSIX time functions which use the ESP32's\n  RTC and FRC1 timers to maintain an accurate time. The system time is\n  initialized to 0 on startup, it can be set with an SNTP sync, or with\n  POSIX time functions. This time will not reset after a software reboot.\n  e.g. (00:01:30.000)\n\n- NOTE: Currently this will not get used in logging from binary blobs\n  (i.e WiFi & Bluetooth libraries), these will always print\n  milliseconds since boot.",
                         "id": "component-config-log-output-log-timestamps",
                         "name": "LOG_TIMESTAMP_SOURCE",
                         "title": "Log Timestamps",
@@ -7055,7 +5512,7 @@
                             }
                         ],
                         "depends_on": null,
-                        "help": "This allows to yield the CPUs between erase commands.\nPrevents starvation of other tasks.\nPlease use this configuration together with ``SPI_FLASH_ERASE_YIELD_DURATION_MS`` and\n``SPI_FLASH_ERASE_YIELD_TICKS`` after carefully checking flash datasheet to avoid a\nwatchdog timeout.\nFor more information, please check `SPI Flash API` reference documenation\nunder section `OS Function`.",
+                        "help": "This allows to yield the CPUs between erase commands.\nPrevents starvation of other tasks.",
                         "id": "SPI_FLASH_YIELD_DURING_ERASE",
                         "name": "SPI_FLASH_YIELD_DURING_ERASE",
                         "range": null,
@@ -7159,22 +5616,12 @@
                             },
                             {
                                 "children": [],
-                                "depends_on": null,
+                                "depends_on": "!IDF_TARGET_ESP32",
                                 "help": "Enable this to support auto detection of BOYA chips if chip vendor not directly\ngiven by ``chip_drv`` member of the chip struct. This adds support for variant\nchips, however will extend detecting time.",
                                 "id": "SPI_FLASH_SUPPORT_BOYA_CHIP",
                                 "name": "SPI_FLASH_SUPPORT_BOYA_CHIP",
                                 "range": null,
                                 "title": "BOYA",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": null,
-                                "help": "Enable this to support auto detection of TH chips if chip vendor not directly\ngiven by ``chip_drv`` member of the chip struct. This adds support for variant\nchips, however will extend detecting time.",
-                                "id": "SPI_FLASH_SUPPORT_TH_CHIP",
-                                "name": "SPI_FLASH_SUPPORT_TH_CHIP",
-                                "range": null,
-                                "title": "TH",
                                 "type": "bool"
                             },
                             {
@@ -7213,6 +5660,24 @@
         "depends_on": null,
         "id": "component-config",
         "title": "Component config",
+        "type": "menu"
+    },
+    {
+        "children": [
+            {
+                "children": [],
+                "depends_on": null,
+                "help": "Soc, esp32, and driver components, the most common\ncomponents. Some header of these components are included\nimplicitly by headers of other components before IDF v4.0.\nIt's not required for high-level components, but still\nincluded through long header chain everywhere.\n\nThis is harmful to the modularity. So it's changed in IDF\nv4.0.\n\nYou can still include these headers in a legacy way until it\nis totally deprecated by enable this option.",
+                "id": "LEGACY_INCLUDE_COMMON_HEADERS",
+                "name": "LEGACY_INCLUDE_COMMON_HEADERS",
+                "range": null,
+                "title": "Include headers across components as before IDF v4.0",
+                "type": "bool"
+            }
+        ],
+        "depends_on": null,
+        "id": "compatibility-options",
+        "title": "Compatibility options",
         "type": "menu"
     }
 ]

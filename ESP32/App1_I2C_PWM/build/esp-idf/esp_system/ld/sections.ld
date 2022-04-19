@@ -1,6 +1,6 @@
 /* Automatically generated file; DO NOT EDIT */
 /* Espressif IoT Development Framework Linker Script */
-/* Generated from: /home/anafilipe/esp/esp-idf/components/esp_system/ld/esp32/sections.ld.in */
+/* Generated from: /home/tiagoadonis/esp/esp-idf/components/esp_system/ld/esp32/sections.ld.in */
 
 /*
  * SPDX-FileCopyrightText: 2021 Espressif Systems (Shanghai) CO LTD
@@ -183,7 +183,6 @@ SECTIONS
     *(.iram1 .iram1.*)
     *libapp_trace.a:app_trace.*(.literal .literal.* .text .text.*)
     *libapp_trace.a:app_trace_util.*(.literal .literal.* .text .text.*)
-    *libapp_trace.a:port_uart.*(.literal .literal.* .text .text.*)
     *libesp_event.a:default_event_loop.*(.literal.esp_event_isr_post .text.esp_event_isr_post)
     *libesp_event.a:esp_event.*(.literal.esp_event_isr_post_to .text.esp_event_isr_post_to)
     *libesp_hw_support.a:cpu_util.*(.literal .literal.* .text .text.*)
@@ -194,8 +193,6 @@ SECTIONS
     *libesp_hw_support.a:rtc_time.*(.literal .literal.* .text .text.*)
     *libesp_hw_support.a:rtc_wdt.*(.literal .literal.* .text .text.*)
     *libesp_ringbuf.a:(.literal .literal.* .text .text.*)
-    *libesp_rom.a:esp_rom_regi2c.*(.literal .literal.* .text .text.*)
-    *libesp_rom.a:esp_rom_spiflash.*(.literal .literal.* .text .text.*)
     *libesp_system.a:esp_err.*(.literal .literal.* .text .text.*)
     *libesp_system.a:esp_system.*(.literal.esp_system_abort .text.esp_system_abort)
     *libesp_system.a:ubsan.*(.literal .literal.* .text .text.*)
@@ -207,7 +204,6 @@ SECTIONS
     *libhal.a:cpu_hal.*(.literal .literal.* .text .text.*)
     *libhal.a:i2c_hal_iram.*(.literal .literal.* .text .text.*)
     *libhal.a:ledc_hal_iram.*(.literal .literal.* .text .text.*)
-    *libhal.a:mmu_hal.*(.literal .literal.* .text .text.*)
     *libhal.a:soc_hal.*(.literal .literal.* .text .text.*)
     *libhal.a:spi_flash_encrypt_hal_iram.*(.literal .literal.* .text .text.*)
     *libhal.a:spi_flash_hal_iram.*(.literal .literal.* .text .text.*)
@@ -236,13 +232,12 @@ SECTIONS
     *librtc.a:(.literal .literal.* .text .text.*)
     *libsoc.a:lldesc.*(.literal .literal.* .text .text.*)
     *libspi_flash.a:memspi_host_driver.*(.literal .literal.* .text .text.*)
-    *libspi_flash.a:spi_flash_chip_boya.*(.literal .literal.* .text .text.*)
     *libspi_flash.a:spi_flash_chip_gd.*(.literal .literal.* .text .text.*)
     *libspi_flash.a:spi_flash_chip_generic.*(.literal .literal.* .text .text.*)
     *libspi_flash.a:spi_flash_chip_issi.*(.literal .literal.* .text .text.*)
     *libspi_flash.a:spi_flash_chip_mxic.*(.literal .literal.* .text .text.*)
-    *libspi_flash.a:spi_flash_chip_th.*(.literal .literal.* .text .text.*)
     *libspi_flash.a:spi_flash_chip_winbond.*(.literal .literal.* .text .text.*)
+    *libspi_flash.a:spi_flash_rom_patch.*(.literal .literal.* .text .text.*)
     *libxt_hal.a:(.literal .literal.* .text .text.*)
     *libxtensa.a:eri.*(.literal .literal.* .text .text.*)
     *libxtensa.a:xtensa_intr_asm.*(.literal .literal.* .text .text.*)
@@ -269,11 +264,10 @@ SECTIONS
     *(EXCLUDE_FILE(*libbt.a *libbtdm_app.a *libnimble.a) .data EXCLUDE_FILE(*libbt.a *libbtdm_app.a *libnimble.a) .data.*)
     *(.dram1 .dram1.*)
     _coredump_dram_start = ABSOLUTE(.);
-    *(.dram2.coredump .dram2.coredump.*)
+    *(.dram1.coredump .dram1.coredump.*)
     _coredump_dram_end = ABSOLUTE(.);
     *libapp_trace.a:app_trace.*(.rodata .rodata.*)
     *libapp_trace.a:app_trace_util.*(.rodata .rodata.*)
-    *libapp_trace.a:port_uart.*(.rodata .rodata.*)
     _bt_data_start = ABSOLUTE(.);
     *libbt.a:(.data .data.*)
     . = ALIGN(4);
@@ -283,15 +277,12 @@ SECTIONS
     . = ALIGN(4);
     _btdm_data_end = ABSOLUTE(.);
     *libesp_hw_support.a:rtc_clk.*(.rodata .rodata.*)
-    *libesp_rom.a:esp_rom_regi2c.*(.rodata .rodata.*)
-    *libesp_rom.a:esp_rom_spiflash.*(.rodata .rodata.*)
     *libesp_system.a:esp_err.*(.rodata .rodata.*)
     *libesp_system.a:ubsan.*(.rodata .rodata.*)
     *libgcov.a:(.rodata .rodata.*)
     *libhal.a:cpu_hal.*(.rodata .rodata.*)
     *libhal.a:i2c_hal_iram.*(.rodata .rodata.*)
     *libhal.a:ledc_hal_iram.*(.rodata .rodata.*)
-    *libhal.a:mmu_hal.*(.rodata .rodata.*)
     *libhal.a:soc_hal.*(.rodata .rodata.*)
     *libhal.a:spi_flash_encrypt_hal_iram.*(.rodata .rodata.*)
     *libhal.a:spi_flash_hal_iram.*(.rodata .rodata.*)
@@ -311,13 +302,12 @@ SECTIONS
     *libphy.a:(.rodata .rodata.*)
     *libsoc.a:lldesc.*(.rodata .rodata.*)
     *libspi_flash.a:memspi_host_driver.*(.rodata .rodata.*)
-    *libspi_flash.a:spi_flash_chip_boya.*(.rodata .rodata.*)
     *libspi_flash.a:spi_flash_chip_gd.*(.rodata .rodata.*)
     *libspi_flash.a:spi_flash_chip_generic.*(.rodata .rodata.*)
     *libspi_flash.a:spi_flash_chip_issi.*(.rodata .rodata.*)
     *libspi_flash.a:spi_flash_chip_mxic.*(.rodata .rodata.*)
-    *libspi_flash.a:spi_flash_chip_th.*(.rodata .rodata.*)
     *libspi_flash.a:spi_flash_chip_winbond.*(.rodata .rodata.*)
+    *libspi_flash.a:spi_flash_rom_patch.*(.rodata .rodata.*)
 
     _data_end = ABSOLUTE(.);
     . = ALIGN(4);
@@ -366,8 +356,8 @@ SECTIONS
     _bss_start = ABSOLUTE(.);
 
     *(.bss .bss.*)
-    *(.dynbss .dynsbss .gnu.linkonce.b .gnu.linkonce.b.* .gnu.linkonce.sb .gnu.linkonce.sb.* .gnu.linkonce.sb2 .gnu.linkonce.sb2.* .sbss .sbss.* .sbss2 .sbss2.* .scommon .share.mem)
     *(.ext_ram.bss .ext_ram.bss.*)
+    *(.dynbss .dynsbss .gnu.linkonce.b .gnu.linkonce.b.* .gnu.linkonce.sb .gnu.linkonce.sb.* .gnu.linkonce.sb2 .gnu.linkonce.sb2.* .sbss .sbss.* .sbss2 .sbss2.* .scommon .share.mem)
     *(COMMON)
     _bt_bss_start = ABSOLUTE(.);
     *libbt.a:(.bss .bss.* COMMON)
@@ -406,7 +396,7 @@ SECTIONS
   {
     _flash_rodata_start = ABSOLUTE(.);
 
-    *(EXCLUDE_FILE(*libgcov.a *libphy.a *libapp_trace.a:app_trace.* *libapp_trace.a:app_trace_util.* *libapp_trace.a:port_uart.* *libesp_hw_support.a:rtc_clk.* *libesp_rom.a:esp_rom_regi2c.* *libesp_rom.a:esp_rom_spiflash.* *libesp_system.a:esp_err.* *libesp_system.a:ubsan.* *libhal.a:cpu_hal.* *libhal.a:i2c_hal_iram.* *libhal.a:ledc_hal_iram.* *libhal.a:mmu_hal.* *libhal.a:soc_hal.* *libhal.a:spi_flash_encrypt_hal_iram.* *libhal.a:spi_flash_hal_iram.* *libhal.a:spi_hal_iram.* *libhal.a:spi_slave_hal_iram.* *libhal.a:wdt_hal_iram.* *libheap.a:heap_tlsf.* *libheap.a:multi_heap.* *libnewlib.a:abort.* *libnewlib.a:assert.* *libnewlib.a:heap.* *libnewlib.a:stdatomic.* *libsoc.a:lldesc.* *libspi_flash.a:memspi_host_driver.* *libspi_flash.a:spi_flash_chip_boya.* *libspi_flash.a:spi_flash_chip_gd.* *libspi_flash.a:spi_flash_chip_generic.* *libspi_flash.a:spi_flash_chip_issi.* *libspi_flash.a:spi_flash_chip_mxic.* *libspi_flash.a:spi_flash_chip_th.* *libspi_flash.a:spi_flash_chip_winbond.*) .rodata EXCLUDE_FILE(*libgcov.a *libphy.a *libapp_trace.a:app_trace.* *libapp_trace.a:app_trace_util.* *libapp_trace.a:port_uart.* *libesp_hw_support.a:rtc_clk.* *libesp_rom.a:esp_rom_regi2c.* *libesp_rom.a:esp_rom_spiflash.* *libesp_system.a:esp_err.* *libesp_system.a:ubsan.* *libhal.a:cpu_hal.* *libhal.a:i2c_hal_iram.* *libhal.a:ledc_hal_iram.* *libhal.a:mmu_hal.* *libhal.a:soc_hal.* *libhal.a:spi_flash_encrypt_hal_iram.* *libhal.a:spi_flash_hal_iram.* *libhal.a:spi_hal_iram.* *libhal.a:spi_slave_hal_iram.* *libhal.a:wdt_hal_iram.* *libheap.a:heap_tlsf.* *libheap.a:multi_heap.* *libnewlib.a:abort.* *libnewlib.a:assert.* *libnewlib.a:heap.* *libnewlib.a:stdatomic.* *libsoc.a:lldesc.* *libspi_flash.a:memspi_host_driver.* *libspi_flash.a:spi_flash_chip_boya.* *libspi_flash.a:spi_flash_chip_gd.* *libspi_flash.a:spi_flash_chip_generic.* *libspi_flash.a:spi_flash_chip_issi.* *libspi_flash.a:spi_flash_chip_mxic.* *libspi_flash.a:spi_flash_chip_th.* *libspi_flash.a:spi_flash_chip_winbond.*) .rodata.*)
+    *(EXCLUDE_FILE(*libgcov.a *libphy.a *libapp_trace.a:app_trace.* *libapp_trace.a:app_trace_util.* *libesp_hw_support.a:rtc_clk.* *libesp_system.a:esp_err.* *libesp_system.a:ubsan.* *libhal.a:cpu_hal.* *libhal.a:i2c_hal_iram.* *libhal.a:ledc_hal_iram.* *libhal.a:soc_hal.* *libhal.a:spi_flash_encrypt_hal_iram.* *libhal.a:spi_flash_hal_iram.* *libhal.a:spi_hal_iram.* *libhal.a:spi_slave_hal_iram.* *libhal.a:wdt_hal_iram.* *libheap.a:heap_tlsf.* *libheap.a:multi_heap.* *libnewlib.a:abort.* *libnewlib.a:assert.* *libnewlib.a:heap.* *libnewlib.a:stdatomic.* *libsoc.a:lldesc.* *libspi_flash.a:memspi_host_driver.* *libspi_flash.a:spi_flash_chip_gd.* *libspi_flash.a:spi_flash_chip_generic.* *libspi_flash.a:spi_flash_chip_issi.* *libspi_flash.a:spi_flash_chip_mxic.* *libspi_flash.a:spi_flash_chip_winbond.* *libspi_flash.a:spi_flash_rom_patch.*) .rodata EXCLUDE_FILE(*libgcov.a *libphy.a *libapp_trace.a:app_trace.* *libapp_trace.a:app_trace_util.* *libesp_hw_support.a:rtc_clk.* *libesp_system.a:esp_err.* *libesp_system.a:ubsan.* *libhal.a:cpu_hal.* *libhal.a:i2c_hal_iram.* *libhal.a:ledc_hal_iram.* *libhal.a:soc_hal.* *libhal.a:spi_flash_encrypt_hal_iram.* *libhal.a:spi_flash_hal_iram.* *libhal.a:spi_hal_iram.* *libhal.a:spi_slave_hal_iram.* *libhal.a:wdt_hal_iram.* *libheap.a:heap_tlsf.* *libheap.a:multi_heap.* *libnewlib.a:abort.* *libnewlib.a:assert.* *libnewlib.a:heap.* *libnewlib.a:stdatomic.* *libsoc.a:lldesc.* *libspi_flash.a:memspi_host_driver.* *libspi_flash.a:spi_flash_chip_gd.* *libspi_flash.a:spi_flash_chip_generic.* *libspi_flash.a:spi_flash_chip_issi.* *libspi_flash.a:spi_flash_chip_mxic.* *libspi_flash.a:spi_flash_chip_winbond.* *libspi_flash.a:spi_flash_rom_patch.*) .rodata.*)
     *(.rodata_wlog_error .rodata_wlog_error.*)
     *(.rodata_wlog_info .rodata_wlog_info.*)
     *(.rodata_wlog_warning .rodata_wlog_warning.*)
@@ -480,13 +470,13 @@ SECTIONS
     _stext = .;
     _text_start = ABSOLUTE(.);
 
-    *(EXCLUDE_FILE(*libesp_ringbuf.a *libfreertos.a *libgcov.a *librtc.a *libxt_hal.a *libapp_trace.a:app_trace.* *libapp_trace.a:app_trace_util.* *libapp_trace.a:port_uart.* *libesp_event.a:default_event_loop.* *libesp_event.a:esp_event.* *libesp_hw_support.a:cpu_util.* *libesp_hw_support.a:rtc_clk.* *libesp_hw_support.a:rtc_init.* *libesp_hw_support.a:rtc_pm.* *libesp_hw_support.a:rtc_sleep.* *libesp_hw_support.a:rtc_time.* *libesp_hw_support.a:rtc_wdt.* *libesp_rom.a:esp_rom_regi2c.* *libesp_rom.a:esp_rom_spiflash.* *libesp_system.a:esp_err.* *libesp_system.a:esp_system.* *libesp_system.a:ubsan.* *libgcc.a:lib2funcs.* *libhal.a:cpu_hal.* *libhal.a:i2c_hal_iram.* *libhal.a:ledc_hal_iram.* *libhal.a:mmu_hal.* *libhal.a:soc_hal.* *libhal.a:spi_flash_encrypt_hal_iram.* *libhal.a:spi_flash_hal_iram.* *libhal.a:spi_hal_iram.* *libhal.a:spi_slave_hal_iram.* *libhal.a:wdt_hal_iram.* *libheap.a:heap_tlsf.* *libheap.a:multi_heap.* *liblog.a:log.* *liblog.a:log_freertos.* *libnewlib.a:abort.* *libnewlib.a:assert.* *libnewlib.a:heap.* *libnewlib.a:stdatomic.* *libsoc.a:lldesc.* *libspi_flash.a:memspi_host_driver.* *libspi_flash.a:spi_flash_chip_boya.* *libspi_flash.a:spi_flash_chip_gd.* *libspi_flash.a:spi_flash_chip_generic.* *libspi_flash.a:spi_flash_chip_issi.* *libspi_flash.a:spi_flash_chip_mxic.* *libspi_flash.a:spi_flash_chip_th.* *libspi_flash.a:spi_flash_chip_winbond.* *libxtensa.a:eri.* *libxtensa.a:xtensa_intr_asm.*) .literal EXCLUDE_FILE(*libesp_ringbuf.a *libfreertos.a *libgcov.a *librtc.a *libxt_hal.a *libapp_trace.a:app_trace.* *libapp_trace.a:app_trace_util.* *libapp_trace.a:port_uart.* *libesp_event.a:default_event_loop.* *libesp_event.a:esp_event.* *libesp_hw_support.a:cpu_util.* *libesp_hw_support.a:rtc_clk.* *libesp_hw_support.a:rtc_init.* *libesp_hw_support.a:rtc_pm.* *libesp_hw_support.a:rtc_sleep.* *libesp_hw_support.a:rtc_time.* *libesp_hw_support.a:rtc_wdt.* *libesp_rom.a:esp_rom_regi2c.* *libesp_rom.a:esp_rom_spiflash.* *libesp_system.a:esp_err.* *libesp_system.a:esp_system.* *libesp_system.a:ubsan.* *libgcc.a:lib2funcs.* *libhal.a:cpu_hal.* *libhal.a:i2c_hal_iram.* *libhal.a:ledc_hal_iram.* *libhal.a:mmu_hal.* *libhal.a:soc_hal.* *libhal.a:spi_flash_encrypt_hal_iram.* *libhal.a:spi_flash_hal_iram.* *libhal.a:spi_hal_iram.* *libhal.a:spi_slave_hal_iram.* *libhal.a:wdt_hal_iram.* *libheap.a:heap_tlsf.* *libheap.a:multi_heap.* *liblog.a:log.* *liblog.a:log_freertos.* *libnewlib.a:abort.* *libnewlib.a:assert.* *libnewlib.a:heap.* *libnewlib.a:stdatomic.* *libsoc.a:lldesc.* *libspi_flash.a:memspi_host_driver.* *libspi_flash.a:spi_flash_chip_boya.* *libspi_flash.a:spi_flash_chip_gd.* *libspi_flash.a:spi_flash_chip_generic.* *libspi_flash.a:spi_flash_chip_issi.* *libspi_flash.a:spi_flash_chip_mxic.* *libspi_flash.a:spi_flash_chip_th.* *libspi_flash.a:spi_flash_chip_winbond.* *libxtensa.a:eri.* *libxtensa.a:xtensa_intr_asm.*) .literal.* EXCLUDE_FILE(*libesp_ringbuf.a *libfreertos.a *libgcov.a *librtc.a *libxt_hal.a *libapp_trace.a:app_trace.* *libapp_trace.a:app_trace_util.* *libapp_trace.a:port_uart.* *libesp_event.a:default_event_loop.* *libesp_event.a:esp_event.* *libesp_hw_support.a:cpu_util.* *libesp_hw_support.a:rtc_clk.* *libesp_hw_support.a:rtc_init.* *libesp_hw_support.a:rtc_pm.* *libesp_hw_support.a:rtc_sleep.* *libesp_hw_support.a:rtc_time.* *libesp_hw_support.a:rtc_wdt.* *libesp_rom.a:esp_rom_regi2c.* *libesp_rom.a:esp_rom_spiflash.* *libesp_system.a:esp_err.* *libesp_system.a:esp_system.* *libesp_system.a:ubsan.* *libgcc.a:lib2funcs.* *libhal.a:cpu_hal.* *libhal.a:i2c_hal_iram.* *libhal.a:ledc_hal_iram.* *libhal.a:mmu_hal.* *libhal.a:soc_hal.* *libhal.a:spi_flash_encrypt_hal_iram.* *libhal.a:spi_flash_hal_iram.* *libhal.a:spi_hal_iram.* *libhal.a:spi_slave_hal_iram.* *libhal.a:wdt_hal_iram.* *libheap.a:heap_tlsf.* *libheap.a:multi_heap.* *liblog.a:log.* *liblog.a:log_freertos.* *libnewlib.a:abort.* *libnewlib.a:assert.* *libnewlib.a:heap.* *libnewlib.a:stdatomic.* *libsoc.a:lldesc.* *libspi_flash.a:memspi_host_driver.* *libspi_flash.a:spi_flash_chip_boya.* *libspi_flash.a:spi_flash_chip_gd.* *libspi_flash.a:spi_flash_chip_generic.* *libspi_flash.a:spi_flash_chip_issi.* *libspi_flash.a:spi_flash_chip_mxic.* *libspi_flash.a:spi_flash_chip_th.* *libspi_flash.a:spi_flash_chip_winbond.* *libxtensa.a:eri.* *libxtensa.a:xtensa_intr_asm.*) .text EXCLUDE_FILE(*libesp_ringbuf.a *libfreertos.a *libgcov.a *librtc.a *libxt_hal.a *libapp_trace.a:app_trace.* *libapp_trace.a:app_trace_util.* *libapp_trace.a:port_uart.* *libesp_event.a:default_event_loop.* *libesp_event.a:esp_event.* *libesp_hw_support.a:cpu_util.* *libesp_hw_support.a:rtc_clk.* *libesp_hw_support.a:rtc_init.* *libesp_hw_support.a:rtc_pm.* *libesp_hw_support.a:rtc_sleep.* *libesp_hw_support.a:rtc_time.* *libesp_hw_support.a:rtc_wdt.* *libesp_rom.a:esp_rom_regi2c.* *libesp_rom.a:esp_rom_spiflash.* *libesp_system.a:esp_err.* *libesp_system.a:esp_system.* *libesp_system.a:ubsan.* *libgcc.a:lib2funcs.* *libhal.a:cpu_hal.* *libhal.a:i2c_hal_iram.* *libhal.a:ledc_hal_iram.* *libhal.a:mmu_hal.* *libhal.a:soc_hal.* *libhal.a:spi_flash_encrypt_hal_iram.* *libhal.a:spi_flash_hal_iram.* *libhal.a:spi_hal_iram.* *libhal.a:spi_slave_hal_iram.* *libhal.a:wdt_hal_iram.* *libheap.a:heap_tlsf.* *libheap.a:multi_heap.* *liblog.a:log.* *liblog.a:log_freertos.* *libnewlib.a:abort.* *libnewlib.a:assert.* *libnewlib.a:heap.* *libnewlib.a:stdatomic.* *libsoc.a:lldesc.* *libspi_flash.a:memspi_host_driver.* *libspi_flash.a:spi_flash_chip_boya.* *libspi_flash.a:spi_flash_chip_gd.* *libspi_flash.a:spi_flash_chip_generic.* *libspi_flash.a:spi_flash_chip_issi.* *libspi_flash.a:spi_flash_chip_mxic.* *libspi_flash.a:spi_flash_chip_th.* *libspi_flash.a:spi_flash_chip_winbond.* *libxtensa.a:eri.* *libxtensa.a:xtensa_intr_asm.*) .text.*)
+    *(EXCLUDE_FILE(*libesp_ringbuf.a *libfreertos.a *libgcov.a *librtc.a *libxt_hal.a *libapp_trace.a:app_trace.* *libapp_trace.a:app_trace_util.* *libesp_event.a:default_event_loop.* *libesp_event.a:esp_event.* *libesp_hw_support.a:cpu_util.* *libesp_hw_support.a:rtc_clk.* *libesp_hw_support.a:rtc_init.* *libesp_hw_support.a:rtc_pm.* *libesp_hw_support.a:rtc_sleep.* *libesp_hw_support.a:rtc_time.* *libesp_hw_support.a:rtc_wdt.* *libesp_system.a:esp_err.* *libesp_system.a:esp_system.* *libesp_system.a:ubsan.* *libgcc.a:lib2funcs.* *libhal.a:cpu_hal.* *libhal.a:i2c_hal_iram.* *libhal.a:ledc_hal_iram.* *libhal.a:soc_hal.* *libhal.a:spi_flash_encrypt_hal_iram.* *libhal.a:spi_flash_hal_iram.* *libhal.a:spi_hal_iram.* *libhal.a:spi_slave_hal_iram.* *libhal.a:wdt_hal_iram.* *libheap.a:heap_tlsf.* *libheap.a:multi_heap.* *liblog.a:log.* *liblog.a:log_freertos.* *libnewlib.a:abort.* *libnewlib.a:assert.* *libnewlib.a:heap.* *libnewlib.a:stdatomic.* *libsoc.a:lldesc.* *libspi_flash.a:memspi_host_driver.* *libspi_flash.a:spi_flash_chip_gd.* *libspi_flash.a:spi_flash_chip_generic.* *libspi_flash.a:spi_flash_chip_issi.* *libspi_flash.a:spi_flash_chip_mxic.* *libspi_flash.a:spi_flash_chip_winbond.* *libspi_flash.a:spi_flash_rom_patch.* *libxtensa.a:eri.* *libxtensa.a:xtensa_intr_asm.*) .literal EXCLUDE_FILE(*libesp_ringbuf.a *libfreertos.a *libgcov.a *librtc.a *libxt_hal.a *libapp_trace.a:app_trace.* *libapp_trace.a:app_trace_util.* *libesp_event.a:default_event_loop.* *libesp_event.a:esp_event.* *libesp_hw_support.a:cpu_util.* *libesp_hw_support.a:rtc_clk.* *libesp_hw_support.a:rtc_init.* *libesp_hw_support.a:rtc_pm.* *libesp_hw_support.a:rtc_sleep.* *libesp_hw_support.a:rtc_time.* *libesp_hw_support.a:rtc_wdt.* *libesp_system.a:esp_err.* *libesp_system.a:esp_system.* *libesp_system.a:ubsan.* *libgcc.a:lib2funcs.* *libhal.a:cpu_hal.* *libhal.a:i2c_hal_iram.* *libhal.a:ledc_hal_iram.* *libhal.a:soc_hal.* *libhal.a:spi_flash_encrypt_hal_iram.* *libhal.a:spi_flash_hal_iram.* *libhal.a:spi_hal_iram.* *libhal.a:spi_slave_hal_iram.* *libhal.a:wdt_hal_iram.* *libheap.a:heap_tlsf.* *libheap.a:multi_heap.* *liblog.a:log.* *liblog.a:log_freertos.* *libnewlib.a:abort.* *libnewlib.a:assert.* *libnewlib.a:heap.* *libnewlib.a:stdatomic.* *libsoc.a:lldesc.* *libspi_flash.a:memspi_host_driver.* *libspi_flash.a:spi_flash_chip_gd.* *libspi_flash.a:spi_flash_chip_generic.* *libspi_flash.a:spi_flash_chip_issi.* *libspi_flash.a:spi_flash_chip_mxic.* *libspi_flash.a:spi_flash_chip_winbond.* *libspi_flash.a:spi_flash_rom_patch.* *libxtensa.a:eri.* *libxtensa.a:xtensa_intr_asm.*) .literal.* EXCLUDE_FILE(*libesp_ringbuf.a *libfreertos.a *libgcov.a *librtc.a *libxt_hal.a *libapp_trace.a:app_trace.* *libapp_trace.a:app_trace_util.* *libesp_event.a:default_event_loop.* *libesp_event.a:esp_event.* *libesp_hw_support.a:cpu_util.* *libesp_hw_support.a:rtc_clk.* *libesp_hw_support.a:rtc_init.* *libesp_hw_support.a:rtc_pm.* *libesp_hw_support.a:rtc_sleep.* *libesp_hw_support.a:rtc_time.* *libesp_hw_support.a:rtc_wdt.* *libesp_system.a:esp_err.* *libesp_system.a:esp_system.* *libesp_system.a:ubsan.* *libgcc.a:lib2funcs.* *libhal.a:cpu_hal.* *libhal.a:i2c_hal_iram.* *libhal.a:ledc_hal_iram.* *libhal.a:soc_hal.* *libhal.a:spi_flash_encrypt_hal_iram.* *libhal.a:spi_flash_hal_iram.* *libhal.a:spi_hal_iram.* *libhal.a:spi_slave_hal_iram.* *libhal.a:wdt_hal_iram.* *libheap.a:heap_tlsf.* *libheap.a:multi_heap.* *liblog.a:log.* *liblog.a:log_freertos.* *libnewlib.a:abort.* *libnewlib.a:assert.* *libnewlib.a:heap.* *libnewlib.a:stdatomic.* *libsoc.a:lldesc.* *libspi_flash.a:memspi_host_driver.* *libspi_flash.a:spi_flash_chip_gd.* *libspi_flash.a:spi_flash_chip_generic.* *libspi_flash.a:spi_flash_chip_issi.* *libspi_flash.a:spi_flash_chip_mxic.* *libspi_flash.a:spi_flash_chip_winbond.* *libspi_flash.a:spi_flash_rom_patch.* *libxtensa.a:eri.* *libxtensa.a:xtensa_intr_asm.*) .text EXCLUDE_FILE(*libesp_ringbuf.a *libfreertos.a *libgcov.a *librtc.a *libxt_hal.a *libapp_trace.a:app_trace.* *libapp_trace.a:app_trace_util.* *libesp_event.a:default_event_loop.* *libesp_event.a:esp_event.* *libesp_hw_support.a:cpu_util.* *libesp_hw_support.a:rtc_clk.* *libesp_hw_support.a:rtc_init.* *libesp_hw_support.a:rtc_pm.* *libesp_hw_support.a:rtc_sleep.* *libesp_hw_support.a:rtc_time.* *libesp_hw_support.a:rtc_wdt.* *libesp_system.a:esp_err.* *libesp_system.a:esp_system.* *libesp_system.a:ubsan.* *libgcc.a:lib2funcs.* *libhal.a:cpu_hal.* *libhal.a:i2c_hal_iram.* *libhal.a:ledc_hal_iram.* *libhal.a:soc_hal.* *libhal.a:spi_flash_encrypt_hal_iram.* *libhal.a:spi_flash_hal_iram.* *libhal.a:spi_hal_iram.* *libhal.a:spi_slave_hal_iram.* *libhal.a:wdt_hal_iram.* *libheap.a:heap_tlsf.* *libheap.a:multi_heap.* *liblog.a:log.* *liblog.a:log_freertos.* *libnewlib.a:abort.* *libnewlib.a:assert.* *libnewlib.a:heap.* *libnewlib.a:stdatomic.* *libsoc.a:lldesc.* *libspi_flash.a:memspi_host_driver.* *libspi_flash.a:spi_flash_chip_gd.* *libspi_flash.a:spi_flash_chip_generic.* *libspi_flash.a:spi_flash_chip_issi.* *libspi_flash.a:spi_flash_chip_mxic.* *libspi_flash.a:spi_flash_chip_winbond.* *libspi_flash.a:spi_flash_rom_patch.* *libxtensa.a:eri.* *libxtensa.a:xtensa_intr_asm.*) .text.*)
     *(EXCLUDE_FILE(*libnet80211.a *libpp.a) .wifi0iram EXCLUDE_FILE(*libnet80211.a *libpp.a) .wifi0iram.*)
     *(EXCLUDE_FILE(*libpp.a) .wifiorslpiram EXCLUDE_FILE(*libpp.a) .wifiorslpiram.*)
     *(EXCLUDE_FILE(*libnet80211.a *libpp.a) .wifirxiram EXCLUDE_FILE(*libnet80211.a *libpp.a) .wifirxiram.*)
     *(.wifislpiram .wifislpiram.*)
     *(EXCLUDE_FILE(*libnet80211.a *libpp.a) .wifislprxiram EXCLUDE_FILE(*libnet80211.a *libpp.a) .wifislprxiram.*)
-    *libesp_event.a:default_event_loop.*(.literal.esp_event_handler_instance_register .literal.esp_event_handler_instance_unregister .literal.esp_event_handler_register .literal.esp_event_handler_unregister .literal.esp_event_loop_create_default .literal.esp_event_loop_delete_default .literal.esp_event_post .text .text.esp_event_handler_instance_register .text.esp_event_handler_instance_unregister .text.esp_event_handler_register .text.esp_event_handler_unregister .text.esp_event_loop_create_default .text.esp_event_loop_delete_default .text.esp_event_post)
+    *libesp_event.a:default_event_loop.*(.literal.esp_event_handler_instance_register .literal.esp_event_handler_instance_unregister .literal.esp_event_handler_register .literal.esp_event_handler_unregister .literal.esp_event_loop_create_default .literal.esp_event_loop_delete_default .literal.esp_event_post .literal.esp_event_send_to_default_loop .text .text.esp_event_handler_instance_register .text.esp_event_handler_instance_unregister .text.esp_event_handler_register .text.esp_event_handler_unregister .text.esp_event_loop_create_default .text.esp_event_loop_delete_default .text.esp_event_post .text.esp_event_send_to_default_loop)
     *libesp_event.a:esp_event.*(.literal.base_node_add_handler .literal.base_node_remove_all_handler .literal.base_node_remove_handler .literal.esp_event_handler_instance_register_with .literal.esp_event_handler_instance_unregister_with .literal.esp_event_handler_register_with .literal.esp_event_handler_register_with_internal .literal.esp_event_handler_unregister_with .literal.esp_event_handler_unregister_with_internal .literal.esp_event_loop_create .literal.esp_event_loop_delete .literal.esp_event_loop_run .literal.esp_event_loop_run_task .literal.esp_event_post_to .literal.handler_instances_add .literal.handler_instances_remove .literal.handler_instances_remove_all .literal.loop_node_add_handler .literal.loop_node_remove_all_handler .literal.loop_node_remove_handler .text .text.base_node_add_handler .text.base_node_remove_all_handler .text.base_node_remove_handler .text.esp_event_dump .text.esp_event_handler_instance_register_with .text.esp_event_handler_instance_unregister_with .text.esp_event_handler_register_with .text.esp_event_handler_register_with_internal .text.esp_event_handler_unregister_with .text.esp_event_handler_unregister_with_internal .text.esp_event_loop_create .text.esp_event_loop_delete .text.esp_event_loop_run .text.esp_event_loop_run_task .text.esp_event_post_to .text.handler_execute .text.handler_instances_add .text.handler_instances_remove .text.handler_instances_remove_all .text.loop_node_add_handler .text.loop_node_remove_all_handler .text.loop_node_remove_handler)
     *libesp_hw_support.a:rtc_init.*(.literal.rtc_init .literal.rtc_vddsdio_get_config .text .text.rtc_init .text.rtc_vddsdio_get_config)
     *libesp_system.a:esp_system.*(.literal.esp_get_free_heap_size .literal.esp_get_free_internal_heap_size .literal.esp_get_idf_version .literal.esp_get_minimum_free_heap_size .literal.esp_register_shutdown_handler .literal.esp_unregister_shutdown_handler .text .text.esp_get_free_heap_size .text.esp_get_free_internal_heap_size .text.esp_get_idf_version .text.esp_get_minimum_free_heap_size .text.esp_register_shutdown_handler .text.esp_unregister_shutdown_handler)
@@ -533,7 +523,7 @@ SECTIONS
 
     *(.iram.data .iram.data.*)
     _coredump_iram_start = ABSOLUTE(.);
-    *(.iram2.coredump .iram2.coredump.*)
+    *(.iram.data.coredump .iram.data.coredump.*)
     _coredump_iram_end = ABSOLUTE(.);
 
     _iram_data_end = ABSOLUTE(.);

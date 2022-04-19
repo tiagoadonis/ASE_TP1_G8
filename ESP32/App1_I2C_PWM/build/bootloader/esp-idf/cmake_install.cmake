@@ -1,4 +1,4 @@
-# Install script for directory: /home/anafilipe/esp/esp-idf
+# Install script for directory: /home/tiagoadonis/esp/esp-idf
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,30 +34,30 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/home/anafilipe/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-objdump")
+  set(CMAKE_OBJDUMP "/home/tiagoadonis/.espressif/tools/xtensa-esp32-elf/esp-2021r2-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-objdump")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/anafilipe/esp/App1_I2C_PWM/build/bootloader/esp-idf/newlib/cmake_install.cmake")
-  include("/home/anafilipe/esp/App1_I2C_PWM/build/bootloader/esp-idf/soc/cmake_install.cmake")
-  include("/home/anafilipe/esp/App1_I2C_PWM/build/bootloader/esp-idf/micro-ecc/cmake_install.cmake")
-  include("/home/anafilipe/esp/App1_I2C_PWM/build/bootloader/esp-idf/hal/cmake_install.cmake")
-  include("/home/anafilipe/esp/App1_I2C_PWM/build/bootloader/esp-idf/spi_flash/cmake_install.cmake")
-  include("/home/anafilipe/esp/App1_I2C_PWM/build/bootloader/esp-idf/bootloader_support/cmake_install.cmake")
-  include("/home/anafilipe/esp/App1_I2C_PWM/build/bootloader/esp-idf/efuse/cmake_install.cmake")
-  include("/home/anafilipe/esp/App1_I2C_PWM/build/bootloader/esp-idf/esp_system/cmake_install.cmake")
-  include("/home/anafilipe/esp/App1_I2C_PWM/build/bootloader/esp-idf/esp_hw_support/cmake_install.cmake")
-  include("/home/anafilipe/esp/App1_I2C_PWM/build/bootloader/esp-idf/xtensa/cmake_install.cmake")
-  include("/home/anafilipe/esp/App1_I2C_PWM/build/bootloader/esp-idf/esp32/cmake_install.cmake")
-  include("/home/anafilipe/esp/App1_I2C_PWM/build/bootloader/esp-idf/esp_common/cmake_install.cmake")
-  include("/home/anafilipe/esp/App1_I2C_PWM/build/bootloader/esp-idf/esp_rom/cmake_install.cmake")
-  include("/home/anafilipe/esp/App1_I2C_PWM/build/bootloader/esp-idf/log/cmake_install.cmake")
-  include("/home/anafilipe/esp/App1_I2C_PWM/build/bootloader/esp-idf/esptool_py/cmake_install.cmake")
-  include("/home/anafilipe/esp/App1_I2C_PWM/build/bootloader/esp-idf/partition_table/cmake_install.cmake")
-  include("/home/anafilipe/esp/App1_I2C_PWM/build/bootloader/esp-idf/bootloader/cmake_install.cmake")
-  include("/home/anafilipe/esp/App1_I2C_PWM/build/bootloader/esp-idf/freertos/cmake_install.cmake")
-  include("/home/anafilipe/esp/App1_I2C_PWM/build/bootloader/esp-idf/main/cmake_install.cmake")
+  include("/home/tiagoadonis/esp-idf_workspace/I2C_PWM/build/bootloader/esp-idf/newlib/cmake_install.cmake")
+  include("/home/tiagoadonis/esp-idf_workspace/I2C_PWM/build/bootloader/esp-idf/hal/cmake_install.cmake")
+  include("/home/tiagoadonis/esp-idf_workspace/I2C_PWM/build/bootloader/esp-idf/soc/cmake_install.cmake")
+  include("/home/tiagoadonis/esp-idf_workspace/I2C_PWM/build/bootloader/esp-idf/micro-ecc/cmake_install.cmake")
+  include("/home/tiagoadonis/esp-idf_workspace/I2C_PWM/build/bootloader/esp-idf/spi_flash/cmake_install.cmake")
+  include("/home/tiagoadonis/esp-idf_workspace/I2C_PWM/build/bootloader/esp-idf/bootloader_support/cmake_install.cmake")
+  include("/home/tiagoadonis/esp-idf_workspace/I2C_PWM/build/bootloader/esp-idf/efuse/cmake_install.cmake")
+  include("/home/tiagoadonis/esp-idf_workspace/I2C_PWM/build/bootloader/esp-idf/esp_system/cmake_install.cmake")
+  include("/home/tiagoadonis/esp-idf_workspace/I2C_PWM/build/bootloader/esp-idf/esp_hw_support/cmake_install.cmake")
+  include("/home/tiagoadonis/esp-idf_workspace/I2C_PWM/build/bootloader/esp-idf/xtensa/cmake_install.cmake")
+  include("/home/tiagoadonis/esp-idf_workspace/I2C_PWM/build/bootloader/esp-idf/esp32/cmake_install.cmake")
+  include("/home/tiagoadonis/esp-idf_workspace/I2C_PWM/build/bootloader/esp-idf/esp_common/cmake_install.cmake")
+  include("/home/tiagoadonis/esp-idf_workspace/I2C_PWM/build/bootloader/esp-idf/esp_rom/cmake_install.cmake")
+  include("/home/tiagoadonis/esp-idf_workspace/I2C_PWM/build/bootloader/esp-idf/log/cmake_install.cmake")
+  include("/home/tiagoadonis/esp-idf_workspace/I2C_PWM/build/bootloader/esp-idf/esptool_py/cmake_install.cmake")
+  include("/home/tiagoadonis/esp-idf_workspace/I2C_PWM/build/bootloader/esp-idf/partition_table/cmake_install.cmake")
+  include("/home/tiagoadonis/esp-idf_workspace/I2C_PWM/build/bootloader/esp-idf/bootloader/cmake_install.cmake")
+  include("/home/tiagoadonis/esp-idf_workspace/I2C_PWM/build/bootloader/esp-idf/freertos/cmake_install.cmake")
+  include("/home/tiagoadonis/esp-idf_workspace/I2C_PWM/build/bootloader/esp-idf/main/cmake_install.cmake")
 
 endif()
 

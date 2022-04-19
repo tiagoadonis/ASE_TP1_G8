@@ -1,4 +1,4 @@
-set(CMAKE_C_COMPILER "/home/anafilipe/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc")
+set(CMAKE_C_COMPILER "/home/tiagoadonis/.espressif/tools/xtensa-esp32-elf/esp-2021r2-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc")
 set(CMAKE_C_COMPILER_ARG1 "")
 set(CMAKE_C_COMPILER_ID "GNU")
 set(CMAKE_C_COMPILER_VERSION "8.4.0")
@@ -18,11 +18,11 @@ set(CMAKE_C_SIMULATE_VERSION "")
 
 
 
-set(CMAKE_AR "/home/anafilipe/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-ar")
-set(CMAKE_C_COMPILER_AR "/home/anafilipe/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc-ar")
-set(CMAKE_RANLIB "/home/anafilipe/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-ranlib")
-set(CMAKE_C_COMPILER_RANLIB "/home/anafilipe/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc-ranlib")
-set(CMAKE_LINKER "/home/anafilipe/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-ld")
+set(CMAKE_AR "/home/tiagoadonis/.espressif/tools/xtensa-esp32-elf/esp-2021r2-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-ar")
+set(CMAKE_C_COMPILER_AR "/home/tiagoadonis/.espressif/tools/xtensa-esp32-elf/esp-2021r2-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc-ar")
+set(CMAKE_RANLIB "/home/tiagoadonis/.espressif/tools/xtensa-esp32-elf/esp-2021r2-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-ranlib")
+set(CMAKE_C_COMPILER_RANLIB "/home/tiagoadonis/.espressif/tools/xtensa-esp32-elf/esp-2021r2-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc-ranlib")
+set(CMAKE_LINKER "/home/tiagoadonis/.espressif/tools/xtensa-esp32-elf/esp-2021r2-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-ld")
 set(CMAKE_MT "")
 set(CMAKE_COMPILER_IS_GNUCC 1)
 set(CMAKE_C_COMPILER_LOADED 1)
@@ -72,7 +72,7 @@ endif()
 
 
 
-set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "/home/anafilipe/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.4.0/include;/home/anafilipe/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.4.0/include-fixed;/home/anafilipe/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/xtensa-esp32-elf/sys-include;/home/anafilipe/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/xtensa-esp32-elf/include")
+set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "/home/tiagoadonis/.espressif/tools/xtensa-esp32-elf/esp-2021r2-8.4.0/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.4.0/include;/home/tiagoadonis/.espressif/tools/xtensa-esp32-elf/esp-2021r2-8.4.0/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.4.0/include-fixed;/home/tiagoadonis/.espressif/tools/xtensa-esp32-elf/esp-2021r2-8.4.0/xtensa-esp32-elf/xtensa-esp32-elf/sys-include;/home/tiagoadonis/.espressif/tools/xtensa-esp32-elf/esp-2021r2-8.4.0/xtensa-esp32-elf/xtensa-esp32-elf/include")
 set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "gcc;c;nosys;c;gcc")
-set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "/home/anafilipe/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.4.0;/home/anafilipe/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/lib/gcc;/home/anafilipe/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/xtensa-esp32-elf/lib")
+set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "/home/tiagoadonis/.espressif/tools/xtensa-esp32-elf/esp-2021r2-8.4.0/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.4.0;/home/tiagoadonis/.espressif/tools/xtensa-esp32-elf/esp-2021r2-8.4.0/xtensa-esp32-elf/lib/gcc;/home/tiagoadonis/.espressif/tools/xtensa-esp32-elf/esp-2021r2-8.4.0/xtensa-esp32-elf/xtensa-esp32-elf/lib")
 set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")

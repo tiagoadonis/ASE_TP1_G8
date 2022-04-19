@@ -1,13 +1,13 @@
 # Target labels
  bootloader
 # Source files and their labels
-/home/anafilipe/esp/App1_I2C_PWM/build/CMakeFiles/bootloader
-/home/anafilipe/esp/App1_I2C_PWM/build/CMakeFiles/bootloader.rule
-/home/anafilipe/esp/App1_I2C_PWM/build/CMakeFiles/bootloader-complete.rule
-/home/anafilipe/esp/App1_I2C_PWM/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
-/home/anafilipe/esp/App1_I2C_PWM/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
-/home/anafilipe/esp/App1_I2C_PWM/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
-/home/anafilipe/esp/App1_I2C_PWM/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
-/home/anafilipe/esp/App1_I2C_PWM/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
-/home/anafilipe/esp/App1_I2C_PWM/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
-/home/anafilipe/esp/App1_I2C_PWM/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
+/home/tiagoadonis/esp-idf_workspace/I2C_PWM/build/CMakeFiles/bootloader
+/home/tiagoadonis/esp-idf_workspace/I2C_PWM/build/CMakeFiles/bootloader.rule
+/home/tiagoadonis/esp-idf_workspace/I2C_PWM/build/CMakeFiles/bootloader-complete.rule
+/home/tiagoadonis/esp-idf_workspace/I2C_PWM/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/tiagoadonis/esp-idf_workspace/I2C_PWM/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/tiagoadonis/esp-idf_workspace/I2C_PWM/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/tiagoadonis/esp-idf_workspace/I2C_PWM/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/tiagoadonis/esp-idf_workspace/I2C_PWM/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/tiagoadonis/esp-idf_workspace/I2C_PWM/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/tiagoadonis/esp-idf_workspace/I2C_PWM/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
