@@ -32,9 +32,9 @@ static const char *TAG = "I2C_PWM";
 
 #define LEDC_HS_TIMER LEDC_TIMER_0
 #define LEDC_HS_MODE LEDC_HIGH_SPEED_MODE
-#define LEDC_HS_CH0_GPIO GPIO_NUM_5
+#define LEDC_HS_CH0_GPIO (5)
 #define LEDC_HS_CH0_CHANNEL LEDC_CHANNEL_0
-#define LEDC_HS_CH1_GPIO GPIO_NUM_4
+#define LEDC_HS_CH1_GPIO (4)
 #define LEDC_HS_CH1_CHANNEL LEDC_CHANNEL_1
 #define LEDC_LS_TIMER LEDC_TIMER_1
 #define LEDC_LS_MODE LEDC_LOW_SPEED_MODE
@@ -85,27 +85,28 @@ static void i2c_pwm_task(void *arg){
     
     // Set configuration of timer0 for high speed channels
     ledc_timer_config(&ledc_timer);
+
     // Prepare and set configuration of timer1 for low speed channels
     ledc_timer.speed_mode = LEDC_HS_MODE;
     ledc_timer.timer_num = LEDC_HS_TIMER;
     ledc_timer_config(&ledc_timer);
 
-ledc_channel_config_t ledc_channel[LEDC_TEST_CH_NUM] = {
-        { .channel    = LEDC_HS_CH0_CHANNEL,
-          .duty       = 0,
-          .gpio_num   = LEDC_HS_CH0_GPIO,
-          .speed_mode = LEDC_HS_MODE,
-          .hpoint     = 0,
-          .timer_sel  = LEDC_HS_TIMER,
-          .flags.output_invert = 0 },
-        
-        { .channel    = LEDC_HS_CH1_CHANNEL,
-          .duty       = 0,
-          .gpio_num   = LEDC_HS_CH1_GPIO,
-          .speed_mode = LEDC_HS_MODE,
-          .hpoint     = 0,
-          .timer_sel  = LEDC_HS_TIMER,
-          .flags.output_invert = 0 },
+    ledc_channel_config_t ledc_channel[LEDC_TEST_CH_NUM] = {
+            {   .channel    = LEDC_HS_CH0_CHANNEL,
+                .duty       = 0,
+                .gpio_num   = LEDC_HS_CH0_GPIO,
+                .speed_mode = LEDC_HS_MODE,
+                .hpoint     = 0,
+                .timer_sel  = LEDC_HS_TIMER,
+                .flags.output_invert = 0 },
+            
+            {   .channel    = LEDC_HS_CH1_CHANNEL,
+                .duty       = 0,
+                .gpio_num   = LEDC_HS_CH1_GPIO,
+                .speed_mode = LEDC_HS_MODE,
+                .hpoint     = 0,
+                .timer_sel  = LEDC_HS_TIMER,
+                .flags.output_invert = 0 },
     };
 
     // Set LED Controller with previously prepared configuration
