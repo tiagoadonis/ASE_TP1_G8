@@ -1,0 +1,10 @@
+This is an application that uses the SPI on the 25LC040A SPI EEPROM. It writes some data on the EEPROM,
+reads this data and then prints it on the screen.
+
+Peripherals configuration:
+
+- 25LC040A SPI EEPROM
+  - CS: GPIO18
+  - MISO: GPIO19
+  - MOSI: GPIO25
+  - SCLK: GPIO27

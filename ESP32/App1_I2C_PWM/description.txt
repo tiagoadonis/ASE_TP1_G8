@@ -1,0 +1,13 @@
+This is a application that uses I2C based on the TC74 I2C temperature sensor and the PWM on two LEDs.
+The temperature sensor reads the temperature on the local and if the temperature is higher than 30ºC 
+the red LED blinks. If the temperature maintains under the 30ºC the green LED blinks.
+
+Peripherals configuration:
+
+- TC74 I2C temperature sensor
+  - SDA: GPIO_21
+  - SCLK: GPIO_22
+
+- LEDs (PWM)
+  - Red LED: GPIO4
+  - Green LED: GPIO5

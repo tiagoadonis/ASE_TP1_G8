@@ -1,0 +1,7 @@
+This is an application that uses an potentiometer with ADC to read the voltage an then prints it 
+with the help of the UART_0.  
+
+Peripherals configuration:
+
+- potentiometer
+  - ADC1 channel 0: GPIO36 (input)
