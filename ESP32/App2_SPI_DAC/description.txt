@@ -8,3 +8,6 @@ Peripherals configuration:
   - MISO: GPIO19
   - MOSI: GPIO25
   - SCLK: GPIO27
+  
+ - DAC
+  - DAC_CHANNEL_2: GPIO26
