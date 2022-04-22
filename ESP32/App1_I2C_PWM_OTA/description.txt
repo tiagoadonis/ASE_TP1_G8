@@ -1,4 +1,4 @@
-This application downloads the firware of the first aplication (App1_I2C_PWM).
+This application downloads the firmware of the first aplication (App1_I2C_PWM).
 
 Peripherals configuration (App1_I2C_PWM):
 
