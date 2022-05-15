@@ -59,6 +59,21 @@ void app_main(void){
 	for (int addr = 0; addr < 512; addr++) {
 		writeByte(&eeprom, addr, data[addr]);
 	}
+	
+	// DAC
+	dac_output_enable(DAC_CHANNEL_2);
+	
+	for(uint8_t i=0; i < 255; i++){
+		//Set output voltage and generate delay
+		dac_output_voltage(DAC_CHANNEL_2, i);
+		vTaskDelay(10 / portTICK_PERIOD_MS);
+	}
+	for(uint8_t i=255; i > 0; i--){
+		//Set output voltage and generate delay
+		dac_output_voltage(DAC_CHANNEL_2, i);
+		vTaskDelay(10 / portTICK_PERIOD_MS);
+	}
+	dac_output_disable(DAC_CHANNEL_2);
 
 	memset(rx_buf, 0, 512);
 	read_n_bytes(&eeprom, 0, rx_buf, 512);

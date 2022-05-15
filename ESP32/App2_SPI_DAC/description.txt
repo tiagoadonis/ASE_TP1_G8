@@ -1,4 +1,4 @@
-This is an application that uses the SPI on the 25LC040A SPI EEPROM. It writes some data on the EEPROM,
+This is an application that uses the SPI on the 25LC040A SPI EEPROM. It writes some data on the EEPROM and with DAC change the voltage (show with a led),
 reads this data and then prints it on the screen.
 
 Peripherals configuration:
@@ -8,3 +8,6 @@ Peripherals configuration:
   - MISO: GPIO19
   - MOSI: GPIO25
   - SCLK: GPIO27
+  
+ - DAC
+  - DAC_CHANNEL_2: GPIO26

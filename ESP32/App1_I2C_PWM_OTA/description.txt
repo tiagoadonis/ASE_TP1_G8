@@ -1,0 +1,11 @@
+This application downloads the firmware of the first aplication (App1_I2C_PWM).
+
+Peripherals configuration (App1_I2C_PWM):
+
+- TC74 I2C temperature sensor
+  - SDA: GPIO_21
+  - SCLK: GPIO_22
+
+- LEDs (PWM)
+  - Red LED: GPIO4
+  - Green LED: GPIO5
