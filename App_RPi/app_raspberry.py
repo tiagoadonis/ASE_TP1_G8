@@ -23,9 +23,8 @@ try:
     GPIO.output(TRIG, False)
     print("Waiting For Sensor To Settle")
     
-    # TODO check this sleep time
-    # sleep for 2s
-    time.sleep(2)
+    # sleep for 0.5s
+    time.sleep(0.5)
 
     # Init the trigger
     GPIO.output(TRIG, True)
@@ -53,23 +52,12 @@ try:
 
     # Round the distance value with two decimal number
     distance = round(distance, 2)
-    
-    # If the distance is bigger than 15cm the led changes to high level
-    if(distance > 15):
-      GPIO.output(LED_PIN, GPIO.HIGH)
-      # sleep for 1s
-      time.sleep(1)
-    # else the led stays on low
-    else:
-      GPIO.output(LED_PIN, GPIO.LOW)
-      # sleep for 1s
-      time.sleep(1)
 
-    #TODO try this code block to blink with the distance
-    # GPIO.output(LED_PIN, GPIO.HIGH)
-    # time.sleep(distance * 0.02)
-    # GPIO.output(LED_PIN, GPIO.LOW)
-    # time.sleep(distance * 0.02)
+    # The led blinks in an higher frequency when the distance is smaller
+    GPIO.output(LED_PIN, GPIO.HIGH)
+    time.sleep(distance * 0.02)
+    GPIO.output(LED_PIN, GPIO.LOW)
+    time.sleep(distance * 0.02)
 
     # Print the distance value in cm
     print("Distance: ", distance, "cm")

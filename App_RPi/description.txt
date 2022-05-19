@@ -1,1 +1,18 @@
-overview of the system implemented (what application you are implementing and how the peripherals and other features of the kit are being used)
+This is an applications that makes the led blink in an higher frequency when the distance calculated by the ultrasonic is smaller.
+The distance is calculated by the following formula:
+
+distance = (timeElapsed *34300) / 2
+
+34300 -> the sonnic speed (34300 cm/s)
+divide by 2, the going and coming path of the pulse
+
+Peripherals configuration:
+
+- Ultrasonic Ranging Module HC - SR04
+   - Echo: GPIO24
+   - GND: GPIO14
+   - VCC: GPIO2
+   - Trigger: GPIO18
+
+- LED:
+   - Red LED: GPIO8
