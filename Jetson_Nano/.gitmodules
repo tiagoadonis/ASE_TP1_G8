@@ -1,0 +1,8 @@
+[submodule "darknet"]
+	path = app/darknet
+	url = https://github.com/pjreddie/darknet
+
+[submodule "jetson_nano"]
+        path = app/jetson_nano
+        url = https://github.com/dusty-nv/jetson-inference
+

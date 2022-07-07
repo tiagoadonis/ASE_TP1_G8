@@ -1,1 +1,1 @@
-
+This is an application that detects and identifies objects on a static image, video or a live image captured by an smartphone using the IP Webcam app.
