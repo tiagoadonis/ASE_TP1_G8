@@ -1,1 +1,5 @@
 This is an application that detects and identifies objects on a static image, video or a live image captured by an smartphone using the IP Webcam app.
+
+IP Webcam app:
+
+- https://play.google.com/store/apps/details?id=com.pas.webcam
